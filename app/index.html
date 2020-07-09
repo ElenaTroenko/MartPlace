@@ -1,16 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <title>MartPlace</title>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <a href="#" class="logo-link"><img src="images/MartPlace.png" alt="logo" class="header__logo"></a>
+          <div class="header-box">
+            <button class="header-top__btn" type="submit">Become a Seller</button>
+            <div class="header__icons">
+              <button type="button" class="header__icon-button">
+                Notification
+                <span class="lnr lnr-alarm header__icon header__icon-alarm"></span>
+              </button>
+              <button type="button" class="header__icon-button">
+                Email
+                <span class="lnr lnr-envelope header__icon header__icon-envelope"></span>
+              </button>
+              <button type="button" class="header__icon-button">
+                Cart
+                <span class="lnr lnr-cart header__icon header__icon-cart"></span>
+              </button>
+            </div>
+            <div class="header__avatar">
+              <img class="header-box__avatar" src="images/header_avatar.jpg" alt="avatar"></div>
+            <div class="header__user-name">Taofiq Hakim
+              <div class="header__user-account">$20.45</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header-top -->
+    <div class="header__menu">
+      <div class="container">
+        <div class="header__menu-inner">
+          <nav class="header__menu-nav">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="#">HOME</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">all products</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">wordpress</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">festures</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Pages</a></li>
+            </ul>
+          </nav>
+          <div class="header__menu-box">
+            <form action="">
+              <input class="header__menu-search" type="text" placeholder="Search product here...">
+              <button class="header__menu-submit" type="submit"><span
+                  class="lnr lnr-magnifier header__icon-magnifier"></span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- section product -->
+  <section class="product">
+    <div class="container">
+      <div class="product__digital">
+        <div class="product__title">Create Your Own
+          <div class="product__title--bold">Digital Product Marketplace</div>
+        </div>
+        <p class="product__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads
+          Products</p>
+        <button class="product__btn" type="submit">View All Products</button>
+        <button class="product__btn" type="submit">Popular Products</button>
+      </div>
+      <div class="product__search">
+        <div class="product__search-box1 search-box">
+          <input class="product__search-box" type="text" placeholder="Search your products...">
+          <ul class="product__search-list">All Categories</ul>
+          <button class="product__search-btn" type="submit">Search Now</button>
+        </div>
+        <div class="product__search-box2 search-box"></div>
+        <div class="product__search-box3 search-box"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end section product -->
+  <section class="product-item__content">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item__info"><a class="product-item__link" href="#">
+            <img class="product-item1 product-item__img" src="images/product-item1.png" alt="product-image">
+            <div class="product-item__title">Best UX Research</div>
+            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
+          </a></div>
+        <div class="product-item__info"><a class="product-item__link" href="#">
+            <img class="product-item2 product-item__img" src="images/product-item2.png" alt="product-image">
+            <div class="product-item__title">Fully Responsive</div>
+            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
+          </a></div>
+        <div class="product-item__info"><a class="product-item__link" href="#">
+            <img class="product-item1 product-item__img" src="images/product-item3.png" alt="product-image">
+            <div class="product-item__title">Buy & Sell Easily</div>
+            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
+          </a></div>
+      </div>
+    </div>
+  </section>
+  <!-- product-slider -->
+  <section class="product-slider">
+    <div class="container">
+      <div class="product-slider__title">Weekly Featured Products</div>
+      <div class="product-slider__box">
+        <div class="product-slider__images">
+          <div class="product-slider__item">
+            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
+          <div class="product-slider__item">
+            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
+          <div class="product-slider__item">
+            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
+          <!-- description -->
+        </div>
+        <div class="product-slider__desc">
+          <div class="product-slider__desc-inner">
+            <div class="product-slider__desc-title">One Page Resume Template</div>
+            <div class="product-slider__desc-icon">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">AazzTech</span>
+            </div>
+            <div class="product-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra,
+              justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</div>
+            <div class="product-slider__desc-btn">
+              <button class="product-slider__btn" type="button">website</button>
+              <button class="product-slider__btn" type="button">plugin</button>
+              <button class="product-slider__btn" type="button">landing page</button>
+            </div>
+            <div class="product-slider__desc-info">
+              <div class="product-slider__desc-info-inner">
+                <div class="product-slider__desc-info-icon">
+                  <span class="product-slider__price">$10 - $50</span>
+
+                  <span class="product-slider__description-button">
+                    Heart
+                    <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">46</span>
+                  </span>
+                  <span class="product-slider__description-button">
+                    Cart
+                    <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">634</span>
+                  </span>
+                </div>
+                <div class="product-slider__desc-icon-star">
+                  <div class="content-star"></div>
+                  <div class="content-star"></div>
+                  <div class="content-star"></div>
+                  <div class="content-star"></div>
+                  <div class="content-halfstar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section Release Products -->
+  <section class="release-products">
+    <div class="container">
+      <div class="release-products__filter">
+        <div class="release-products__title">Newest Release Products</div>
+        <div class="release-products__filter-menu">
+          <span class="empty">Filter by:</span>
+          <button class="release-products__menu-btn">
+            <div class="release-products__menu-dot"></div>
+            <div class="release-products__menu-dot"></div>
+            <div class="release-products__menu-dot"></div>
+          </button>
+        </div>
+        <div class="release-products__list">
+          <ul class="release-products__menu-list">
+            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Trending items</a>
+            </li>
+            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Best seller</a></li>
+            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Best rating</a></li>
+            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Low price</a></li>
+            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">High price</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="release-products__buttens">
+        <button class="release-products__btn" type="button">Plugins</button>
+        <button class="release-products__btn" type="button">WordPress</button>
+        <button class="release-products__btn" type="button">Site Template</button>
+        <button class="release-products__btn" type="button">PSD Template</button>
+        <button class="release-products__btn" type="button">Joomla</button>
+        <button class="release-products__btn" type="button">User Interface</button>
+        <button class="release-products__btn" type="button">Landing Page</button>
+        <button class="release-products__btn" type="button">Software</button>
+      </div>
+      <div class="release-products__box">
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="WordPress">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">E-commerce Shopping Cart</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">Theme-Valley</span>
+              <span class="product-slider__description-button">
+                WordPress
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">Plugin</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$20</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">90</span>
+                </span>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">246</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">Marketify Coffee Shop</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">EchoTheme</span>
+              <span class="product-slider__description-button">
+                Это - текст для слепых
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">PSD</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$18</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">48</span>
+                </span>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">50</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">Bryson - Portfolio Template</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">Artcorner</span>
+              <span class="product-slider__description-button">
+                WordPress
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">HTML</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$10</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">56</span>
+                </span>
+              </div>
+              <div class="product-slider__desc-icon-star">
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-halfstar"></div>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">68</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">E-commerce Shopping Cart</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">Design-Hub</span>
+
+              <span class="product-slider__description-button">
+                WordPress
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">Plugin</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$10-50</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">90</span>
+                </span>
+              </div>
+              <div class="product-slider__desc-icon-star">
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-halfstar"></div>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">45</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">Marketify Coffee Shop</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">AazzTech</span>
+              <span class="product-slider__description-button">
+               WordPress
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">PSD</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$10-50</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">48</span>
+                </span>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">50</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="release-products__box-item">
+          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
+          <div class="release-products__box-content">
+            <p class="release-products__heading">Bryson - Portfolio Template</p>
+            <div class="release-products__company">
+              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+              <span class="release-products__name-company">Coder-Lab</span>
+              <span class="product-slider__description-button">
+                WordPress
+                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
+                <span class="release-products__cmstype">HTML</span>
+              </span>
+            </div>
+            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+          <div class="release-products__box-content--bottom">
+            <div class="release-products__info-icon">
+              <div class="release-products__info-icon--splitleft">
+                <span class="release-products__price--gray">$10</span>
+                <span class="product-slider__description-button">
+                  Heart
+                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">56</span>
+                </span>
+              </div>
+              <div class="product-slider__desc-icon-star">
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-star"></div>
+                <div class="content-halfstar"></div>
+              </div>
+              <div class="release-products__info-icon--splitright"></div>
+              <span class="product-slider__description-button">
+                Cart
+                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">68</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="release-products__btn-all--new" type="button">All New Products</button>
+    </div>
+    </div>
+  </section>
+  <script src="https://use.fontawesome.com/a7e4904273.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
