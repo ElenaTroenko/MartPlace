@@ -5,450 +5,1265 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MartPlace</title>
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="./favicon.ico" rel="shortcut icon" />
 </head>
+
 <body>
   <header class="header">
     <div class="header-top">
       <div class="container">
         <div class="header-top__inner">
-          <a href="#" class="logo-link"><img src="images/MartPlace.png" alt="logo" class="header__logo"></a>
+          <a href="#" class="header-top__logo-link"><img src="images/MartPlace.png" alt="logo" class="header-top__logo">
+          </a>
           <div class="header-box">
-            <button class="header-top__btn" type="submit">Become a Seller</button>
+            <a class="header-top__link" href="#">Become a Seller</a>
             <div class="header__icons">
-              <button type="button" class="header__icon-button">
+              <a class="header__icon-link">
                 Notification
-                <span class="lnr lnr-alarm header__icon header__icon-alarm"></span>
-              </button>
-              <button type="button" class="header__icon-button">
+                <span class="icon-bell-o header__icon header__icon-alarm"></span>
+              </a>
+              <a class="header__icon-link">
                 Email
-                <span class="lnr lnr-envelope header__icon header__icon-envelope"></span>
-              </button>
-              <button type="button" class="header__icon-button">
+                <span class="icon-envelope-o header__icon header__icon-envelope"></span>
+              </a>
+              <a class="header__icon-link">
                 Cart
-                <span class="lnr lnr-cart header__icon header__icon-cart"></span>
-              </button>
+                <span class="icon-shopping-cart header__icon header__icon-cart"></span>
+              </a>
             </div>
-            <div class="header__avatar">
-              <img class="header-box__avatar" src="images/header_avatar.jpg" alt="avatar"></div>
-            <div class="header__user-name">Taofiq Hakim
+            <a class="header__avatar-link" href="#">
+              <img class="header-box__avatar" src="images/header_avatar.jpg" alt="avatar">
+            </a>
+            <div class="header__user-name">
+              <a class="header__name-link" href="#">Taofiq Hakim</a>
               <div class="header__user-account">$20.45</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- end header-top -->
     <div class="header__menu">
       <div class="container">
-        <div class="header__menu-inner">
-          <nav class="header__menu-nav">
-            <ul class="header__menu-list">
-              <li class="header__menu-item"><a class="header__menu-link" href="#">HOME</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">all products</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">wordpress</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">festures</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Pages</a></li>
+        <div class="header__inner">
+          <nav class="header__menu-nav header__nav">
+            <ul class="header__menu-list ">
+              <li class="header__item"><a class="header__link" href="#">HOME</a></li>
+              <li class="header__item"><a class="header__link" href="#">all products</a></li>
+              <li class="header__item"><a class="header__link" href="#">wordpress</a></li>
+              <li class="header__item"><a class="header__link" href="#">festures</a></li>
+              <li class="header__item"><a class="header__link" href="#">Pages</a></li>
             </ul>
           </nav>
-          <div class="header__menu-box">
-            <form action="">
-              <input class="header__menu-search" type="text" placeholder="Search product here...">
-              <button class="header__menu-submit" type="submit"><span
-                  class="lnr lnr-magnifier header__icon-magnifier"></span></button>
+          <div class="header__box">
+            <form action="" class="header__box-form">
+              <input class="header__search" type="search" placeholder="Search product here...">
+              <button class="header__submit icon-search header__icon-magnifier" type="submit">
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- section product -->
-  <section class="product">
-    <div class="container">
-      <div class="product__digital">
-        <div class="product__title">Create Your Own
-          <div class="product__title--bold">Digital Product Marketplace</div>
-        </div>
-        <p class="product__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads
-          Products</p>
-        <button class="product__btn" type="submit">View All Products</button>
-        <button class="product__btn" type="submit">Popular Products</button>
-      </div>
-      <div class="product__search">
-        <div class="product__search-box1 search-box">
-          <input class="product__search-box" type="text" placeholder="Search your products...">
-          <ul class="product__search-list">All Categories</ul>
-          <button class="product__search-btn" type="submit">Search Now</button>
-        </div>
-        <div class="product__search-box2 search-box"></div>
-        <div class="product__search-box3 search-box"></div>
-      </div>
-    </div>
-  </section>
-  <!-- end section product -->
-  <section class="product-item__content">
-    <div class="container">
-      <div class="product-item">
-        <div class="product-item__info"><a class="product-item__link" href="#">
-            <img class="product-item1 product-item__img" src="images/product-item1.png" alt="product-image">
-            <div class="product-item__title">Best UX Research</div>
-            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</div>
-          </a></div>
-        <div class="product-item__info"><a class="product-item__link" href="#">
-            <img class="product-item2 product-item__img" src="images/product-item2.png" alt="product-image">
-            <div class="product-item__title">Fully Responsive</div>
-            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</div>
-          </a></div>
-        <div class="product-item__info"><a class="product-item__link" href="#">
-            <img class="product-item1 product-item__img" src="images/product-item3.png" alt="product-image">
-            <div class="product-item__title">Buy & Sell Easily</div>
-            <div class="product-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</div>
-          </a></div>
-      </div>
-    </div>
-  </section>
-  <!-- product-slider -->
-  <section class="product-slider">
-    <div class="container">
-      <div class="product-slider__title">Weekly Featured Products</div>
-      <div class="product-slider__box">
-        <div class="product-slider__images">
-          <div class="product-slider__item">
-            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
-          <div class="product-slider__item">
-            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
-          <div class="product-slider__item">
-            <img class="product-slider__item1" src="images/slider/Wordpress1.jpg" alt=""></div>
-          <!-- description -->
-        </div>
-        <div class="product-slider__desc">
-          <div class="product-slider__desc-inner">
-            <div class="product-slider__desc-title">One Page Resume Template</div>
-            <div class="product-slider__desc-icon">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">AazzTech</span>
+  <main>
+    <!-- mein screen -->
+    <section class="mein-screen">
+      <div class="background">
+        <div class="container">
+          <div class="mein-screen__product">
+            <div class="mein-screen__title">Create Your Own</div>
+            <div class="mein-screen__title mein-screen__title--bold">Digital Product Marketplace</div>
+            <p class="mein-screen__text">MartPlace is the most powerful, & customizable template for Easy Digital
+              DownloadsProducts</p>
+            <a class="mein-screen__link" href="#">View All Products</a>
+            <a class="mein-screen__link mein-screen__link--right" href="#">Popular Products</a>
+          </div>
+          <div class="product__search">
+            <div class="product__search-box1 search-box">
+              <form class="product__search-input" action="">
+                <input class="product__search-box" type="text" placeholder="Search your products...">
+                <select class="product__search-list">
+                  <option value="">All Categories</option>
+                  <option value="">WordPress</option>
+                  <option value="">Joomla</option>
+                  <option value="">Landing Page</option>
+                  <option value="">Software</option>
+                </select>
+                <button class="product__search-btn" type="submit">Search Now</button>
+              </form>
             </div>
-            <div class="product-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</div>
-            <div class="product-slider__desc-btn">
-              <button class="product-slider__btn" type="button">website</button>
-              <button class="product-slider__btn" type="button">plugin</button>
-              <button class="product-slider__btn" type="button">landing page</button>
+            <div class="product__search-box2 search-box"></div>
+            <div class="product__search-box3 search-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section product -->
+    <section class="value__content">
+      <div class="container">
+        <div class="value">
+          <div class="value__info">
+            <a class="value__link" href="#">
+              <img class="value1 value__img" src="images/product-item1.png" alt="product-image">
+              <div class="value__title">Best UX Research
+              </div>
+              <div class="value__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+            </a>
+          </div>
+          <div class="value__info">
+            <a class="value__link" href="#">
+              <img class="value2 value__img" src="images/product-item2.png" alt="product-image">
+              <div class="value__title">Fully Responsive
+              </div>
+              <div class="value__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+            </a>
+          </div>
+          <div class="value__info">
+            <a class="value__link" href="#">
+              <img class="value1 value__img" src="images/product-item3.png" alt="product-image">
+              <div class="value__title">Buy & Sell Easily
+              </div>
+              <div class="value__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- weekly-slider -->
+    <section class="weekly-slider">
+      <div class="container">
+        <div class="weekly-slider__title">Weekly Featured Products</div>
+        <div style="width: 100%;">
+          <div class="weekly-slider__images">
+            <div class="weekly-slider__item">
+              <div class="weekly-slider__box-img">
+                <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="Images WordPress">
+                <a class="weekly-slider__link weekly-slider__link-more" href="#">More Info </a>
+                <a class="weekly-slider__link weekly-slider__link-demo " href="#">Live Demo</a>
+              </div>
             </div>
-            <div class="product-slider__desc-info">
-              <div class="product-slider__desc-info-inner">
-                <div class="product-slider__desc-info-icon">
-                  <span class="product-slider__price">$10 - $50</span>
-
-                  <span class="product-slider__description-button">
-                    Heart
-                    <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">46</span>
-                  </span>
-                  <span class="product-slider__description-button">
-                    Cart
-                    <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">634</span>
-                  </span>
+            <div class="weekly-slider__item">
+              <div class="weekly-slider__info">
+                <div class="weekly-slider__desc-title">One Page Resume Template</div>
+                <div class="weekly-slider__desc-icon">
+                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                  <span class="newest-list__name-company">AazzTech</span>
                 </div>
-                <div class="product-slider__desc-icon-star">
-                  <div class="content-star"></div>
-                  <div class="content-star"></div>
-                  <div class="content-star"></div>
-                  <div class="content-star"></div>
-                  <div class="content-halfstar"></div>
+                <div class="weekly-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo
+                  ut
+                  scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                  pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                </div>
+                <div class="weekly-slider__desc-btn">
+                  <button class="weekly-slider__btn" type="button">website</button>
+                  <button class="weekly-slider__btn" type="button">plugin</button>
+                  <button class="weekly-slider__btn" type="button">landing page</button>
+                </div>
+                <div class="weekly-slider__desc-info">
+                  <div class="weekly-slider__desc-info-inner">
+                    <div class="weekly-slider__desc-info-icon">
+                      <span class="weekly-slider__price">$10 - $50</span>
+                      <span class="invisible__text">
+                        Heart
+                        <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">46</span>
+                      </span>
+                      <span class="invisible__text">
+                        Cart
+                        <span class="icon-shopping-cart content-cart--blue"></span>
+                        <span class="content-cart--number">634</span>
+                      </span>
+                    </div>
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="weekly-slider__item">
+              <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="image WordPress">
+            </div>
+            <div class="weekly-slider__item">
+              <div style="padding: 25px">
+                <div class="weekly-slider__desc-title">Two Page Resume Template</div>
+                <div class="weekly-slider__desc-icon">
+                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                  <span class="newest-list__name-company">AazzTech</span>
+                </div>
+                <div class="weekly-slider__desc-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, ut scelerisque the mattis.
+                </div>
+                <div class="weekly-slider__desc-btn">
+                  <button class="weekly-slider__btn" type="button">website</button>
+                  <button class="weekly-slider__btn" type="button">plugin</button>
+                  <button class="weekly-slider__btn" type="button">landing page</button>
+                </div>
+                <div class="weekly-slider__desc-info">
+                  <div class="weekly-slider__desc-info-inner">
+                    <div class="weekly-slider__desc-info-icon">
+                      <span class="weekly-slider__price">$10 - $50</span>
+                      <span class="invisible__text">
+                        Heart
+                        <span class="icon-heart-o content-heart--pink"></span>
+                        <span class="content-heart">46</span>
+                      </span>
+                      <span class="invisible__text">
+                        Cart
+                        <span class="icon-shopping-cart content-cart--blue"></span>
+                        <span class="content-cart--blue">634</span>
+                      </span>
+                    </div>
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="weekly-slider__item">
+              <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="slider-wordpress">
+            </div>
+            <div class="weekly-slider__item">
+              <div style="padding: 25px">
+                <div class="weekly-slider__desc-title">Three Page Resume Template</div>
+                <div class="weekly-slider__desc-icon">
+                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                  <span class="newest-list__name-company">AazzTech</span>
+                </div>
+              </div>
+              <div class="weekly-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                ut
+                scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="weekly-slider__desc-btn">
+                <button class="weekly-slider__btn" type="button">website</button>
+                <button class="weekly-slider__btn" type="button">plugin</button>
+                <button class="weekly-slider__btn" type="button">landing page</button>
+              </div>
+              <div class="weekly-slider__desc-info">
+                <div class="weekly-slider__desc-info-inner">
+                  <div class="weekly-slider__desc-info-icon">
+                    <span class="weekly-slider__price">$10 - $50</span>
+                    <span class="invisible__text">
+                      Heart
+                      <span class="icon-heart-o content-heart--pink"></span>
+                      <span class="content-heart">46</span>
+                    </span>
+                    <span class="invisible__text">
+                      Cart
+                      <span class="icon-shopping-cart content-cart--blue"></span>
+                      <span class="content-cart--blue">634</span>
+                    </span>
+                  </div>
+                  <div class="rate-star"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- section Release Products -->
-  <section class="release-products">
-    <div class="container">
-      <div class="release-products__filter">
-        <div class="release-products__title">Newest Release Products</div>
-        <div class="release-products__filter-menu">
-          <span class="empty">Filter by:</span>
-          <button class="release-products__menu-btn">
-            <div class="release-products__menu-dot"></div>
-            <div class="release-products__menu-dot"></div>
-            <div class="release-products__menu-dot"></div>
-          </button>
+
+      </div>
+      </div>
+    </section>
+    <!-- section newest-list -->
+    <section class="newest-list">
+      <div class="container">
+        <div class="newest-list__filter">
+          <div class="newest-list__title">Newest Release Products</div>
+          <div class="newest-list__filter-menu">
+            <button class="newest-list__menu-btn">
+              <div class="newest-list__menu-title">Filter by:</div>
+              <div style="margin-top: 3px;">
+                <div class="newest-list__menu-dot"></div>
+                <div class="newest-list__menu-dot"></div>
+                <div class="newest-list__menu-dot"></div>
+              </div>
+            </button>
+          </div>
+          <div class="newest-list__list">
+            <ul class="newest-list__menu-list">
+              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Trending items</button>
+              </li>
+              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Best seller</button>
+              </li>
+              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Best rating</button>
+              </li>
+              <li class="newest-list__menu-item"><button class="newest-list__menu-btn"> Low price</button>
+              </li>
+              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">High price</button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="release-products__list">
-          <ul class="release-products__menu-list">
-            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Trending items</a>
+        <div class="newest-list__buttens">
+          <button class="newest-list__btn" type="button" data-filter=".category-plugin">Plugins</button>
+          <button class="newest-list__btn" type="button" data-filter="all">WordPress</button>
+          <button class="newest-list__btn" type="button" data-filter=".category-html">Site Template</button>
+          <button class="newest-list__btn" type="button" data-filter=".category-psd">PSD Template</button>
+          <button class="newest-list__btn" type="button" data-filter="all">Joomla</button>
+          <button class="newest-list__btn" type="button" data-filter="all">User Interface</button>
+          <button class="newest-list__btn" type="button" data-filter="all">Landing Page</button>
+          <button class="newest-list__btn" type="button" data-filter="all">Software</button>
+        </div>
+        <div class="newest-list__box">
+          <div class="newest-list__box-item mix category-plugin" data-order="1">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Theme-Valley</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">Plugin</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$20</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">90</span>
+                  </span>
+                </div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <div class="rate-star"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">246</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="newest-list__box-item mix category-psd" data-order="2">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">EchoTheme</span>
+                <span class="invisible__text">
+                  Wordpress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">PSD</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$18</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">48</span>
+                  </span>
+                </div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">50</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="newest-list__box-item mix category-html" data-order="3">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Artcorner</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype ">HTML</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">68</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="newest-list__box-item mix category-html" data-order="4">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Design-Hub</span>
+
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">Plugin</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10-50</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">90</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">45</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="newest-list__box-item mix category-psd" data-order="5">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="images WordPress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">AazzTech</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">PSD</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10-50</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">48</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">50</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="newest-list__box-item mix category-html" data-order="6">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Coder-Lab</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">HTML</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">68</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newest-list__btn-inner">
+        <button class="newest-list__btn-all--new" type="button">All New Products</button>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- goods-slider -->
+    <section class="goods-slider">
+      <div class="container">
+        <div class="goods-slider__title">
+          Your Followers Feed
+        </div>
+        <div class="goods-slider__items">
+          <div class="goods-slider__box ">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Theme-Valley</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">Plugin</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$20</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="content-heart">90</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">246</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="goods-slider__box">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">EchoTheme</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>>
+                  <span class="newest-list__cmstype">PSD</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$18</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="content-heart">48</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">68</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="goods-slider__box">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Coder-Lab</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">HTML</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--number">68</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="goods-slider__box">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image PSD">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">EchoTheme</span>
+                <span class="invisible__text">
+                  logo psd
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">PSD</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$18</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="content-heart">48</span>
+                  </span>
+                </div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--blue">50</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="goods-slider__box">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image HTML">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Artcorner</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype ">HTML</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$10</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
+                  </span>
+                </div>
+                <div class="rate-star"></div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--blue">68</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="goods-slider__box">
+            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
+            <div class="newest-list__box-content">
+              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__company">
+                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
+                <span class="newest-list__name-company">Theme-Valley</span>
+                <span class="invisible__text">
+                  WordPress
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__cmstype">Plugin</span>
+                </span>
+              </div>
+              <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+            <div class="newest-list__box-content--bottom">
+              <div class="newest-list__info-icon">
+                <div class="newest-list__info-icon--splitleft">
+                  <span class="newest-list__price--gray">$20</span>
+                  <span class="invisible__text">
+                    Heart
+                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="content-heart">90</span>
+                  </span>
+                </div>
+                <div class="newest-list__info-icon--splitright"></div>
+                <span class="invisible__text">
+                  Cart
+                  <span class="icon-shopping-cart content-cart--blue"></span>
+                  <span class="content-cart--blue">246</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- our-counts -->
+    </section>
+    <section class="our-counts">
+      <div class="container">
+        <div class="our-counts__inner">
+          <div class="our-counts__items-1">
+            <div class="our-counts__img-box our-counts__img-box1">
+              <img class="our-counts__image1" src="images/counts/case.png" alt="case">
+            </div>
+            <div class="our-counts__price our-counts__price--yellow">38,436</div>
+            <div class="our-counts__desc our-counts__desc1">items for sale</div>
+          </div>
+          <div class=" our-counts__items-2">
+            <div class="our-counts__img-box our-counts__img-box2">
+              <img class="our-counts__image2" src="images/counts/cloud.png" alt="cloud">
+            </div>
+            <div class="our-counts__price our-counts__price--blue">3,736</div>
+            <div class="our-counts__desc our-counts__desc2">total sales</div>
+          </div>
+          <div class=" our-counts__items-3">
+            <div class="our-counts__img-box our-counts__img-box3">
+              <img class="our-counts__image3" src="images/counts/smile.png" alt="smile">
+            </div>
+            <div class="our-counts__price our-counts__price--green">2,736</div>
+            <div class="our-counts__desc our-counts__desc3">happy customers</div>
+          </div>
+          <div class="  our-counts__items-4">
+            <div class="our-counts__img-box our-counts__img-box4">
+              <img class="our-counts__image4" src="images/counts/users.png" alt="users">
+            </div>
+            <div class="our-counts__price our-counts__price--red">25,736</div>
+            <div class="our-counts__desc our-counts__desc4">members</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- advantage -->
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__header">
+          <div class="advantage__title">Why Choose <span class="advantage__name-company"> MartPlace</span>
+          </div>
+          <p class="advantage__text">Laborum dolo rumes fugats untras.
+            Etharums ser quidem rerum facilis dolores nemis omnis fugats.
+            Lid est laborum dolo rumes fugats untras.
+          </p>
+        </div>
+        <div class="advantege__inner">
+          <div class="advantege__item">
+            <span class="number">01</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/profile.png" alt="icon-file">
+              </div>
+              <div class="advantege__box-title">One Time Payment</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+          <div class="advantege__item">
+            <span class="number">02</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/stick.png" alt="icon-wand">
+              </div>
+              <div class="advantege__box-title">Quality Products</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+          <div class="advantege__item">
+            <span class="number">03</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/lock.png" alt="icon-lock">
+              </div>
+              <div class="advantege__box-title">100% Secure Payment</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+          <div class="advantege__item">
+            <span class="number">04</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/chart-bars.png" alt="chart-bars">
+              </div>
+              <div class="advantege__box-title">Well Organized Code</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+          <div class="advantege__item">
+            <span class="number">05</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/leaf.png" alt="icon-leaf">
+              </div>
+              <div class="advantege__box-title">Life Time Free Update</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+          <div class="advantege__item">
+            <span class="number">06</span>
+            <div class="advantege__box">
+              <div class="advantege__box-images">
+                <img class="advantage__icon" src="images/advantage/phone.png" alt="icon-phone">
+              </div>
+              <div class="advantege__box-title">Fast and Friendly Support</div>
+              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- split-space -->
+    <section class="split-space">
+      <div class="split-space__inner">
+        <div class="split-space__sell" style="background-image: url(images/split-space/BG.png);">
+          <img class="split-space__sell-img" src="images/split-space/Icon_sell.png" alt="icon sell">
+          <div class="split-space__title">Sell Your Products</div>
+          <div class="split-space__text">Nunc placerat mi id nisi interdum mollis.
+            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+          <a class="split-space__link" href="#">Become an Author</a>
+        </div>
+        <div class="split-space__shopping" style="background-image: url(images/split-space/BG-violet.png);">
+          <img class="split-space__shopping-img" src="images/split-space/Icon_shopping.png" alt="Icon shopping">
+          <div class="split-space__title">Start Shopping Today</div>
+          <div class="split-space__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+            scelerisque
+            the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+          <a class="split-space__link split-space__link-start" href="#">Start Shopping</a>
+        </div>
+      </div>
+    </section>
+    <!-- feedback -->
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__heading">
+          <div class="feedback__title advantage__title">Our Clients
+            <span class="feedback__title--blue">Feedback</span>
+          </div>
+          <div class="feedback__text advantage__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum
+            facilis
+            dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+          </div>
+        </div>
+        <div class="feedback__inner">
+          <div class="feedback__box">
+            <img class="feedback__foto-user" src="images/feedback/foto-user.jpg" alt="foto-user">
+            <div class="feedback__info">
+              <div class="feedback__user-name">Taofiqul Hakim</div>
+              <p class="feedback__user-info advantage__text">Product Designer</p>
+            </div>
+            <div class="feedback__box-text advantage__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+              justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+              is
+              id nisi interdum is mollis.
+              Praesent the pharetra, justo ut scelerisque.
+            </div>
+          </div>
+          <div class="feedback__box feedback__box-next">
+            <img class="feedback__foto-user" src="images/feedback/foto-user.jpg" alt="foto-user">
+            <div class="feedback__info">
+              <span class="feedback__user-name">Saifullah Al Murtafee</span>
+              <div class="feedback__user-info advantage__text">Product Designer</div>
+            </div>
+            <div class="feedback__box-text advantage__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+              justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+              is
+              id nisi interdum is mollis.
+              Praesent the pharetra, justo ut scelerisque.
+            </div>
+          </div>
+          <div class="feedback__box">
+            <img class="feedback__foto-user" src="images/feedback/foto-user.jpg" alt="foto-user">
+            <div class="feedback__info">
+              <div class="feedback__user-name">Taofiqul Hakim</div>
+              <p class="feedback__user-info advantage__text">Product Designer</p>
+            </div>
+            <div class="feedback__box-text advantage__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+              justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+              is
+              id nisi interdum is mollis.
+              Praesent the pharetra, justo ut scelerisque.
+            </div>
+          </div>
+          <div class="feedback__box feedback__box-next">
+            <img class="feedback__foto-user" src="images/feedback/foto-user.jpg" alt="foto-user">
+            <div class="feedback__info">
+              <span class="feedback__user-name">Saifullah Al Murtafee</span>
+              <div class="feedback__user-info advantage__text">Product Designer</div>
+            </div>
+            <div class="feedback__box-text advantage__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+              justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+              is
+              id nisi interdum is mollis.
+              Praesent the pharetra, justo ut scelerisque.
+            </div>
+          </div>
+        </div>
+        <a class="feedback__link" href="#">View All Reviews </a>
+      </div>
+    </section>
+    <!-- news -->
+
+
+    <section class="news">
+      <div class="container">
+        <div class="news__heading ">
+          <div class="news__title advantage__title">Latest<span class="news__title--blue">News</span>
+          </div>
+          <div class="news__text advantage__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis
+            dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+          </div>
+        </div>
+        <div class="news__inner">
+          <a class="news__box-link" href="#">
+            <div class="news__box">
+              <div class="news__image">
+                <img class="news__image-product" src="images/news/Design.jpg" alt="web product">
+              </div>
+              <div class="news__box-content">
+                <div class="news__box-title">Web Design Trends in 2017</div>
+                <div class="news__box-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                  scelerisque
+                  the mattis, leo quam aliquet congue.</div>
+              </div>
+              <div class="news__box-inner">
+                <div class="news__box-icons--border">
+                  <span class="news__box-icon">
+                    <span class="icon-alarm news__box-icon--blue"></span>
+                    <date class="news__box-counter">24 Feb 2017</date>
+                  </span>
+                </div>
+                <div class="news__box-icons">
+                  <span class="news__box-icon">
+                    <span class="icon-bubble2"></span> <span class="news__box-counter">45</span>
+                    <span class="icon-eye news__box-icon--eye"></span>
+                    <span class="news__box-counter">345</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="news__box-link" href="#">
+            <div class="news__box">
+              <div class="news__image">
+                <img class="news__image-product" src="images/news/Design2.jpg" alt="web product">
+              </div>
+              <div class="news__box-content">
+                <div class="news__box-title">The best advices to start your own project</div>
+                <div class="news__box-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                  scelerisque
+                </div>
+              </div>
+              <div class="news__box-inner">
+                <div class="news__box-icons--border">
+                  <span class="news__box-icon">
+                    <span class="icon-alarm news__box-icon--blue"></span>
+                    <date class="news__box-counter">24 Feb 2017</date>
+                  </span>
+                </div>
+                <div class="news__box-icons">
+                  <span class="news__box-icon">
+                    <span class="icon-bubble2"></span>
+                    <span class="news__box-counter">45</span>
+                    <span class="icon-eye news__box-icon--eye"></span>
+                    <span class="news__box-counter">345</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="news__box-link" href="#">
+            <div class="news__box">
+              <div class="news__image">
+                <img class="news__image-product" src="images/news/Design3.jpg" alt="web product">
+              </div>
+              <div class="news__box-content">
+                <div class="news__box-title">Best Related Post Plugin</div>
+                <div class="news__box-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                  scelerisque
+                  the mattis, leo quam aliquet congue.</div>
+              </div>
+              <div class="news__box-inner">
+                <div class="news__box-icons--border">
+                  <span class="news__box-icon">
+                    <span class="icon-alarm news__box-icon--blue"></span>
+                    <date class="news__box-counter">24 Feb 2017</date>
+                  </span>
+                </div>
+                <div class="news__box-icons">
+                  <span class="news__box-icon">
+                    <span class="icon-bubble2"></span> <span class="news__box-counter">45</span>
+                    <span class="icon-eye news__box-icon--eye"></span> <span class="news__box-counter">345</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- benefit -->
+    <section class="benefit">
+      <div class="container">
+        <div class="benefit__inner">
+          <div class="benefit__item-left">
+            <div class="benefit__item-images">
+              <img class="benefit__item-pic" src="images/box/Icon_1.png" alt="image money">
+            </div>
+            <div class="benefit__text">30 Days Money Back <span class="benefit__text--blue">Guarantee</span>
+            </div>
+          </div>
+          <div class="benefit__item-right">
+            <div class="benefit__item-images">
+              <img class="benefit__item-pic" src="images/box/Icon_2.png" alt="image money">
+            </div>
+            <div class="benefit__text">Fast and Friendly <span class="benefit__text--purple">Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- case -->
+    <section class="case">
+      <div class="container">
+        <div class="case__box">
+          <div class="case__title">Ready to Join Our Marketplace!</div>
+          <div class="case__text">Over 25,000 designers and developers trust the MartPlace.</div>
+          <a class="case__link" href="#">Join Us Today </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <section class="footer">
+    <div class="container">
+      <div class=" footer__inner">
+        <div class="footer__item footer__item-contacts">
+          <img class="footer__logo footer__title" src="images/footer/MartPlace.png" alt="footer-logo">
+          <div class="footer__text-contacts">Nunc placerat mi id nisi interdum they mollis.
+            Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+          </div>
+          <a class="footer__link footer__link-phone" href="tel:67898752235"> Phone: +6789-875-2235</a>
+          <a class="footer__link footer__link-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+          <address class="footer__address">202 New Hampshire Avenue
+            Northwest #100, New York-2573
+          </address>
+        </div>
+        <div class="footer__item footer__item-menu">
+          <div class="footer__title">Our Company </div>
+          <ul class="footer__list">
+            <li class="footer__list-menu"><a href="#" class="footer__link">About Us </a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link">How It Work</a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link"> Affiliates</a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link">Testimonials</a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link">Contact Us</a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link">Copyright Notice</a></li>
+            <li class="footer__list-menu"><a href="#" class="footer__link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-support">
+          <div class="footer__title">Help Support</div>
+          <ul class="footer__list">
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">Support Forum</a>
             </li>
-            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Best seller</a></li>
-            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Best rating</a></li>
-            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">Low price</a></li>
-            <li class="release-products__menu-item"><a class="release-products__menu-link" href="#">High price</a></li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link"> Terms & Conditions</a>
+            </li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">Support Policy</a>
+            </li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">Refund Policy</a>
+            </li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">Buyers Faq</a>
+            </li>
+            <li class="footer__list-support">
+              <a href="#" class="footer__link">Sellers Faq</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-social">
+          <div class="footer__title">Newsletter</div>
+          <div class="footer__text footer__text-social">Subscribe to get the latest news, update and offer information.
+            Don't worry, we won't send spam!
+          </div>
+          <form class="footer__form" action="post">
+            <input class="footer__input" type="email" placeholder="Enter email">
+            <button class="footer__btn" type="submit">Submit</button>
+          </form>
+          <ul class="footer__list footer__list-social">
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/f.png" alt="icon facebook" class="footer__social-image"></a>
+            </li>
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/t.png" alt="icon Twitter" class="footer__social-image">
+              </a>
+            </li>
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/g.png" alt="icon google" class="footer__social-image">
+              </a>
+            </li>
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/4.png" alt="icon social" class="footer__social-image">
+              </a>
+            </li>
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/in.png" alt="icon social" class="footer__social-image">
+              </a>
+            </li>
+            <li class="footer__list-icon">
+              <a href="#" class="footer__link">
+                <img src="images/footer/6.png" alt="icon social" class="footer__social-image">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="release-products__buttens">
-        <button class="release-products__btn" type="button">Plugins</button>
-        <button class="release-products__btn" type="button">WordPress</button>
-        <button class="release-products__btn" type="button">Site Template</button>
-        <button class="release-products__btn" type="button">PSD Template</button>
-        <button class="release-products__btn" type="button">Joomla</button>
-        <button class="release-products__btn" type="button">User Interface</button>
-        <button class="release-products__btn" type="button">Landing Page</button>
-        <button class="release-products__btn" type="button">Software</button>
-      </div>
-      <div class="release-products__box">
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="WordPress">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">E-commerce Shopping Cart</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">Theme-Valley</span>
-              <span class="product-slider__description-button">
-                WordPress
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">Plugin</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$20</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">90</span>
-                </span>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">246</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">Marketify Coffee Shop</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">EchoTheme</span>
-              <span class="product-slider__description-button">
-                Это - текст для слепых
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">PSD</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$18</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">48</span>
-                </span>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">50</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">Bryson - Portfolio Template</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">Artcorner</span>
-              <span class="product-slider__description-button">
-                WordPress
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">HTML</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$10</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">56</span>
-                </span>
-              </div>
-              <div class="product-slider__desc-icon-star">
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-halfstar"></div>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">68</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">E-commerce Shopping Cart</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">Design-Hub</span>
-
-              <span class="product-slider__description-button">
-                WordPress
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">Plugin</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$10-50</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">90</span>
-                </span>
-              </div>
-              <div class="product-slider__desc-icon-star">
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-halfstar"></div>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">45</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">Marketify Coffee Shop</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">AazzTech</span>
-              <span class="product-slider__description-button">
-               WordPress
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">PSD</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$10-50</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">48</span>
-                </span>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">50</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="release-products__box-item">
-          <img class="release-products__images" src="images/release-products/wordpress.jpg" alt="">
-          <div class="release-products__box-content">
-            <p class="release-products__heading">Bryson - Portfolio Template</p>
-            <div class="release-products__company">
-              <img class="release-products__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-              <span class="release-products__name-company">Coder-Lab</span>
-              <span class="product-slider__description-button">
-                WordPress
-                <i class="fa fa-wordpress release-products__cmstype" aria-hidden="true"></i>
-                <span class="release-products__cmstype">HTML</span>
-              </span>
-            </div>
-            <div class="release-products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-          </div>
-          <div class="release-products__box-content--bottom">
-            <div class="release-products__info-icon">
-              <div class="release-products__info-icon--splitleft">
-                <span class="release-products__price--gray">$10</span>
-                <span class="product-slider__description-button">
-                  Heart
-                  <span class="lnr lnr-heart content-heart--pink"></span><span class="content-heart">56</span>
-                </span>
-              </div>
-              <div class="product-slider__desc-icon-star">
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-star"></div>
-                <div class="content-halfstar"></div>
-              </div>
-              <div class="release-products__info-icon--splitright"></div>
-              <span class="product-slider__description-button">
-                Cart
-                <span class="lnr lnr-cart content-cart--blue"></span><span class="content-cart--blue">68</span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <button class="release-products__btn-all--new" type="button">All New Products</button>
-    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__text-copy">©2017 <span class="footer__name-company">MartPlace.</span> All rights reserved.
+          Created by <a class="footer__bottom-link"> AazzTech</a></div>
+      </div>
     </div>
   </section>
-  <script src="https://use.fontawesome.com/a7e4904273.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

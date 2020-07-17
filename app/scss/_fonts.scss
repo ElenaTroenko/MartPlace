@@ -22,3 +22,82 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Light.woff2') format('woff2'),
+        url('../font/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font/icomoon.eot?4uvhps');
+    src:  url('../font/icomoon.eot?4uvhps#iefix') format('embedded-opentype'),
+      url('../font/icomoon.ttf?4uvhps') format('truetype'),
+      url('../font/icomoon.woff?4uvhps') format('woff'),
+      url('../font/icomoon.svg?4uvhps#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-envelope-o:before {
+    content: "\f003";
+  }
+  .icon-eye:before {
+    content: "\f06e";
+  }
+  .icon-shopping-cart:before {
+    content: "\f07a";
+  }
+  .icon-heart-o:before {
+    content: "\f08a";
+  }
+  .icon-phone:before {
+    content: "\f095";
+  }
+  .icon-bell-o:before {
+    content: "\f0a2";
+  }
+  .icon-envelope:before {
+    content: "\f0e0";
+  }
+  .icon-copyright:before {
+    content: "\f1f9";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-alarm:before {
+    content: "\e950";
+  }
+  .icon-bubble2:before {
+    content: "\e96e";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+  .icon-wordpress:before {
+    content: "\eab4";
+  }
+  .icon-html-five:before {
+    content: "\eae4";
+  }

@@ -17,14 +17,19 @@ gulp.task('sass', function(){
 });
 
 gulp.task('style', function(){
-  return gulp.src(['node_modules/slick-carousel/slick/slick.css','node_modules/normalize.css/normalize.css', 'node_modules/magnific-popup/dist/magnific-popup.css'])
+  return gulp.src(['node_modules/slick-carousel/slick/slick.css',
+  'node_modules/normalize.css/normalize.css', 'node_modules/magnific-popup/dist/magnific-popup.css',
+  'node_modules/rateyo/lib/es/jquery.rateyo.css'])   
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('app/css'))
 });
 
 gulp.task('script', function(){
-  return gulp.src(['node_modules/slick-carousel/slick/slick.js', 'node_modules/magnific-popup/dist/jquery.magnific-popup.js'])
+  return gulp.src(['node_modules/slick-carousel/slick/slick.js',
+   'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+   'node_modules/mixitup/dist/mixitup.js',
+   'node_modules/rateyo/lib/es/jquery.rateyo.js'])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
