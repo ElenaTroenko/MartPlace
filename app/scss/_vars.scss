@@ -17,4 +17,23 @@ $blue: #0674ec;
 @mixin flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;}
+  align-items: center;
+}
+
+@mixin link {
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 53px;
+  transition: all 1s;
+  cursor: pointer;
+  text-align: center;
+}
+
+@mixin footer-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ababab;
+}
+

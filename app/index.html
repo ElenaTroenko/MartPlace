@@ -7,7 +7,6 @@
   <title>MartPlace</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="./favicon.ico" rel="shortcut icon" />
 </head>
 
 <body>
@@ -20,26 +19,507 @@
           <div class="header-box">
             <a class="header-top__link" href="#">Become a Seller</a>
             <div class="header__icons">
-              <a class="header__icon-link">
+              <button class="header__icon-link" type="button">
                 Notification
-                <span class="icon-bell-o header__icon header__icon-alarm"></span>
-              </a>
-              <a class="header__icon-link">
+                <span class="icon-bell-o header__icon header__icon-alarm">
+                  <style>
+                    .header__icon-alarm::after {
+                      content: '25';
+                      position: absolute;
+                      top: -19px;
+                      right: -17px;
+                      min-width: 25px;
+                      height: 25px;
+                      border-radius: 50%;
+                      background-color: red;
+                      text-align: center;
+                      font-size: 14px;
+                      color: #fff;
+                      line-height: 22px;
+                    }
+                  </style>
+                </span>
+              </button>
+              <!-- dropdown   Notification-->
+              <div class="dropdown-notification">
+                <div class="dropdown-notification__title-inner">
+                  <div class="dropdown-notification__title ">My Notifications</div>
+                  <div class="dropdown-notification__view">
+                    <a class="header-view" href="#">View All</a>
+                  </div>
+                </div>
+                <ul class="dropdown-notification__list">
+                  <li class="dropdown-notification__item">
+                    <div class="dropdown-notification__inner">
+                      <div class="dropdown-notification__image">
+                        <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                      </div>
+                      <div class="dropdown-notification__content">
+                        <span class="notification__user-name"> Anderson</span>
+                        <span class="notification__status">added to Favourite</span>
+                        <div class="notification__theme"><a class="notification__theme-link">Marketify Coffee Shop</a>
+                        </div>
+                        <div class="notification__time"> Just now</div>
+                      </div>
+                      <button class="invisible__text" type="button">Heart
+                        <span class="lnr-heart content-icon content__heart--blue"></span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="dropdown-notification__item dropdown-notification__item--two">
+                    <div class="dropdown-notification__inner">
+                      <div class="dropdown-notification__image">
+                        <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                      </div>
+                      <div class="dropdown-notification__content">
+                        <span class="notification__user-name">Michael Jorden</span>
+                        <span class="notification__status">commented </span>
+                        <div class="notification__theme">on
+                          <a class="notification__theme-link"> MartPlace Extension
+                            Bundle</a>
+                        </div>
+                        <div class="notification__time"> 2 hours ago</div>
+                      </div>
+                      <button class="invisible__text" type="button">Massage
+                        <span class="lnr-bubble content-icon content__bubble--purple"></span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="dropdown-notification__item dropdown-notification__item--three">
+                    <div class="dropdown-notification__inner">
+                      <div class="dropdown-notification__image"><img class="dropdown-notification__avatar "
+                          src="images/icon-avatar.jpg" alt="user avatar">
+                      </div>
+                      <div class="dropdown-notification__content">
+                        <span class="notification__user-name">Moshed</span>
+                        <span class="notification__status">Purchased</span>
+                        <div class="notification__theme">
+                          <a class="notification__theme-link">Bryson-Responsive
+                            Template</a>
+                        </div>
+                        <div class="notification__time">6 hours ago</div>
+                      </div>
+                      <button class="invisible__text" type="button">Cart
+                        <span class="lnr-cart content-icon content__cart--red"></span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="dropdown-notification__item dropdown-notification__item--four">
+                    <div class="dropdown-notification__inner">
+                      <div class="dropdown-notification__image">
+                        <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                      </div>
+                      <div class="dropdown-notification__content">
+                        <span class="notification__user-name"> Tamim</span>
+                        <span class="notification__status"> wrote a
+                          review on</span>
+                        <div class="notification__theme">
+                          <a class="notification__theme-link">Rida-Responsive vCard Temp...</a>
+                        </div>
+                        <div class="notification__time"> 2 days ago</div>
+                      </div>
+                      <button class="invisible__text" type="button">Heart
+                        <span class="lnr-star content-icon content__star--green"></span>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown   Notification -->
+
+              <button class="header__icon-link" type="button">
                 Email
-                <span class="icon-envelope-o header__icon header__icon-envelope"></span>
-              </a>
-              <a class="header__icon-link">
+                <span class="icon-envelope-o header__icon header__icon-envelope">
+                  <style>
+                    .header__icon-envelope::after {
+                      content: '6';
+                      position: absolute;
+                      top: -20px;
+                      right: -18px;
+                      min-width: 25px;
+                      height: 25px;
+                      border-radius: 50%;
+                      background-color: #62d03b;
+                      text-align: center;
+                      font-size: 14px;
+                      color: #fff;
+                      line-height: 22px;
+                    }
+                  </style>
+                </span>
+              </button>
+              <!-- dropdown massege -->
+              <div class="header-massages">
+                <div class="header-massages__title-inner">
+                  <div class="header-massages__title title">My Messages</div>
+                  <a href="#" class="header-view">View All</a>
+                </div>
+                <ul class="header-massages__list">
+                  <li class="header-massages__item">
+                    <div class="header-massages__inner">
+                      <div class="header-avatar">
+                        <a href="#" class="header-massages__link">
+                          <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                        </a>
+                      </div>
+                      <div>
+                        <div class="header-box">
+                          <div class="header-massages__name">
+                            <a class="header-massages__link" href="#">Washim</a>
+                          </div>
+                          <style>
+                            .header-massages__name:after {
+                              content: '\e818';
+                              font-family: 'Linearicons-Free';
+                              color: #0674ec;
+                              font-size: 15px;
+                              line-height: 26px;
+                            }
+                          </style>
+                          <div class="header-massages__time">
+                            <a class="header-massages__time" href="#">Just now</a>
+                          </div>
+                        </div>
+                        <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-massages__item">
+                    <div class="header-massages__inner">
+                      <div class="header-avatar">
+                        <a href="#" class="header-massages__link">
+                          <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                        </a>
+                      </div>
+                      <div>
+                        <div class="header-box">
+                          <div class="header-massages__name">
+                            <a class="header-massages__link" href="#">Bulbul Ahmed</a>
+                          </div>
+                          <style>
+                            .header-massages__name:after {
+                              content: '\e818';
+                              font-family: 'Linearicons-Free';
+                              color: #0674ec;
+                              font-size: 15px;
+                              line-height: 26px;
+                            }
+                          </style>
+                          <div class="header-massages__time">
+                            <a class="header-massages__time" href="#">2 hours ago</a>
+                          </div>
+                        </div>
+                        <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-massages__item">
+                    <div class="header-massages__inner">
+                      <div class="header-avatar">
+                        <a href="#" class="header-massages__link">
+                          <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                        </a>
+                      </div>
+                      <div>
+                        <div class="header-box">
+                          <div class="header-massages__name massege-name"><a class="header-massages__link"
+                              href="#">Bulbul Ahmed</a>
+                          </div>
+                          <style>
+                            .massege-name:after {
+                              content: '\e860';
+                              font-family: 'Linearicons-Free';
+                              color: #747a86;
+                              font-size: 15px;
+                              line-height: 26px;
+                            }
+                          </style>
+                          <div class="header-massages__time">
+                            <a class="header-massages__time header-massages__time--grey" href="#">Jul 16</a>
+                          </div>
+                        </div>
+                        <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-massages__item">
+                    <div class="header-massages__inner">
+                      <div class="header-avatar">
+                        <a href="#" class="header-massages__link">
+                          <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                        </a>
+                      </div>
+                      <div>
+                        <div class="header-box">
+                          <div class="header-massages__name name massege-name__icon">
+                            <a class="header-massages__link" href="#">Themeluva</a>
+                          </div>
+                          <style>
+                            .massege-name__icon:after {
+                              content: '';
+                            }
+                          </style>
+                          <div class="header-massages__time">
+                            <a class="header-massages__time header-massages__time--grey" href="#">May 23</a>
+                          </div>
+                        </div>
+                        <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-massages__item">
+                    <div class="header-massages__inner">
+                      <div class="header-avatar">
+                        <a href="#" class="header-massages__link">
+                          <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                        </a>
+                      </div>
+                      <div>
+                        <div class="header-box">
+                          <div class="header-massages__name massege-name__icon"><a class="header-massages__link"
+                              href="#">Adnan</a></div>
+                          <style>
+                            .massege-name__icon:after {
+                              content: '';
+                            }
+                          </style>
+                          <div class="header-massages__time">
+                            <a class="header-massages__time header-massages__time--grey" href="#">Mar 26</a>
+                          </div>
+                        </div>
+                        <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown massege -->
+
+              <button type="button" class="header__icon-link">
                 Cart
-                <span class="icon-shopping-cart header__icon header__icon-cart"></span>
-              </a>
+                <span class="lnr-cart header__icon header__icon-cart">
+                  <style>
+                    .header__icon-cart::after {
+                      content: '2';
+                      position: absolute;
+                      top: -19px;
+                      right: -19px;
+                      min-width: 25px;
+                      height: 25px;
+                      border-radius: 50%;
+                      background-color: #0674ec;
+                      text-align: center;
+                      font-size: 14px;
+                      color: #fff;
+                      line-height: 22px;
+                    }
+                  </style>
+                </span>
+              </button type="button">
+              <!-- dropdown cart -->
+              <div class="dropdown-cart">
+                <ul class="dropdown-cart__list">
+                  <li class="dropdown-cart__item">
+                    <div class="dropdown-cart__inner">
+                      <div class="dropdown-cart__image"><img class="dropdown-cart__theme " src="images/lending.jpg"
+                          alt="user avatar">
+                      </div>
+
+                      <div class="dropdown-cart__content">
+                        <span class="cart-theme"> Finance and Consulting Business Theme</span>
+
+                        <div class="dropdown-cart__cmstype">
+                          <a class="link" href="#">
+                            <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                            <span class="newest-list__wordpress">WordPress</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div><button class="invisible__text" type="button">basket
+                          <span class="lnr-trash content-icon content-icon--grey"></span>
+                        </button>
+                        <div class="dropdown-cart__price">$60</div>
+                      </div>
+                  </li>
+                  <li class="dropdown-cart__item">
+                    <div class="dropdown-cart__inner">
+                      <div class="dropdown-cart__image">
+                        <img class="dropdown-cart__theme " src="images/lending.jpg" alt="user avatar">
+                      </div>
+                      <div class="dropdown-cart__content">
+                        <span class="cart-theme">Flounce - Multipurpose OpenCart Theme</span>
+                        <div class="dropdown-cart__cmstype">
+                          <a class="link" href="#">
+                            <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                            <span class="newest-list__wordpress">WordPress</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div> <button class="invisible__text" type="button">basket
+                          <span class="lnr-trash content-icon content-icon--grey"></span>
+                        </button>
+                        <div class="dropdown-cart__price dropdown-cart__price--two">$20</div>
+                      </div>
+                  </li>
+                  <li class="dropdown-cart__item">
+                    <div class="dropdown-cart__total">
+                      Total : &nbsp;&nbsp; $80
+                    </div>
+                  </li>
+                </ul>
+                <div class="dropdown-cart__btn">
+                  <button class="dropdown-cart__button" type="button">Go to Cart</button>
+                  <button class="dropdown-cart__button dropdown-cart__button--right" type="button">Go to
+                    Checkout</button>
+                </div>
+              </div>
+              <!-- end dropdown cart -->
             </div>
             <a class="header__avatar-link" href="#">
               <img class="header-box__avatar" src="images/header_avatar.jpg" alt="avatar">
             </a>
             <div class="header__user-name">
-              <a class="header__name-link" href="#">Taofiq Hakim</a>
+              <a class="header__name-link link" href="#">Taofiq Hakim</a>
               <div class="header__user-account">$20.45</div>
             </div>
+            <!-- dropdown-user -->
+            <div class="dropdown-user">
+              <ul class="dropdown-user__list">
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link1"> Profile
+                    Page</a>
+                </li>
+                <style>
+                  .dropdown-user__link1::before {
+                    content: '\e82a';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link2">Dashboard</a>
+                </li>
+                <style>
+                  .dropdown-user__link2::before {
+                    content: '\e800';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link3"> Account
+                    Settings</a>
+                </li>
+                <style>
+                  .dropdown-user__link3::before {
+                    content: '\e810';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link4"> Your
+                    Purchases</a>
+                </li>
+                <style>
+                  .dropdown-user__link4::before {
+                    content: '\e82e';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link5">Your
+                    Favorites</a>
+                </li>
+                <style>
+                  .dropdown-user__link5::before {
+                    content: '\e813';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link6">Add
+                    Credits</a>
+                </li>
+                <style>
+                  .dropdown-user__link6::before {
+                    content: '\e812';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link7"> Sales
+                    Statements</a>
+                </li>
+                <style>
+                  .dropdown-user__link7::before {
+                    content: '\e843';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link8"> Edit
+                    Item</a>
+                </li>
+                <style>
+                  .dropdown-user__link8::before {
+                    content: '\e866';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link9">Landing
+                    Pages</a>
+                </li>
+                <style>
+                  .dropdown-user__link9::before {
+                    content: '\e828';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link10">
+                    Withdrawals</a>
+                </li>
+                <style>
+                  .dropdown-user__link10::before {
+                    content: '\e84c';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+                <li class="dropdown-user__item">
+                  <a href="#" class="dropdown-user__link dropdown-user__link11">
+                    Logout</a>
+                </li>
+                <style>
+                  .dropdown-user__link11::before {
+                    content: '\e820';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    left: 20px;
+                  }
+                </style>
+              </ul>
+            </div>
+            <!-- end dropdown-user -->
+
           </div>
         </div>
       </div>
@@ -48,12 +528,345 @@
       <div class="container">
         <div class="header__inner">
           <nav class="header__menu-nav header__nav">
-            <ul class="header__menu-list ">
-              <li class="header__item"><a class="header__link" href="#">HOME</a></li>
-              <li class="header__item"><a class="header__link" href="#">all products</a></li>
-              <li class="header__item"><a class="header__link" href="#">wordpress</a></li>
-              <li class="header__item"><a class="header__link" href="#">festures</a></li>
-              <li class="header__item"><a class="header__link" href="#">Pages</a></li>
+            <buton class="lnr-menu header__btn-nav"></buton>
+            <ul class="header__mobile-list">
+              <li class="header__item-home header__item">
+                <a class="header__link link" href="#">HOME</a>
+              </li>
+              <li class="header__item-products header__item">
+                <a class="header__link link" href="#">all products</a>
+              </li>
+              <li class="header__item-wordpress header__item">
+                <a class="header__link link" href="#">wordpress</a>
+              </li>
+              <li class="header__item header__item">
+                <a class="header__link link" href="#">festures</a>
+              </li>
+              <li class="header__item header__item-pages">
+                <a class="header__link link" href="#">Pages</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__item-home header__item">
+                <a class="header__link link" href="#">HOME</a>
+              </li>
+
+              <!-- dropdown-home -->
+              <div class="dropdown-home">
+                <ul class="dropdown-home__list">
+                  <li class="dropdown-home__item">
+                    <a href="#" class="dropdown-home__link">Home One Multi User</a>
+                  </li>
+                  <li class="dropdown-home__item">
+                    <a href="#" class="dropdown-home__link">Home Two Single User</a>
+                  </li>
+                  <li class="dropdown-home__item">
+                    <a href="#" class="dropdown-home__link">Home Three Product</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown-home -->
+
+              <li class="header__item-products header__item">
+
+                <a class="header__link link" href="#">all products</a>
+
+              </li>
+              <!-- dropdown-products -->
+              <div class="dropdown-products">
+                <ul class="dropdown-products__list">
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Recent Items</a>
+                  </li>
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Popular Items</a>
+                  </li>
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Featured Items</a>
+                  </li>
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Free Templates</a>
+                  </li>
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Follow Feed</a>
+                  </li>
+                  <li class="dropdown-products__item">
+                    <a href="#" class="dropdown-products__link">Top Authors</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown-products -->
+
+              <li class="header__item-wordpress header__item">
+                <a class="header__link link" href="#">wordpress</a>
+              </li>
+              <!-- dropdown-wordpress -->
+              <div class="dropdown-wordpress">
+                <ul class="dropdown-wordpress__list">
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Popular Items</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link"> Admin Templates</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Blog / Magazine /
+                      News</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link"> Creative</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Corporate
+                      Business</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Resume Portfolio</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">eCommerce</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Entertainment</a>
+                  </li>
+                  <li class="dropdown-wordpress__item">
+                    <a href="#" class="dropdown-wordpress__link">Landing Pages</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown-wordpress -->
+
+              <li class="header__item header__item">
+                <a class="header__link link" href="#">festures</a>
+              </li>
+              <li class="header__item header__item-pages">
+                <a class="header__link link" href="#">Pages</a>
+              </li>
+              <!-- header-dropdown page -->
+              <div class="header-dropdown">
+                <div class="header-dropdown-block">
+                  <div class="header-dropdown-box">
+                    <div class="header-dropdown__title">
+                      <a class="header-dropdown__link header-dropdown__link--title" href="#"> MartPlace Pages</a>
+                    </div>
+                    <ul class="header-dropdown__list-item">
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Home
+                          Page One</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link"> Home
+                          Page Two</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Home
+                          Page Three</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Products
+                          Grid</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">
+                          Products List</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Category
+                          Grid Sidebar</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Category
+                          List Sidebar</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Search
+                          Product</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link"> Single
+                          Product V-1</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Single
+                          Product V-2</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Single
+                          Product V-3</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-dropdown-box">
+                    <div class="header-dropdown__title dropdown-title">MartPlace Pages</div>
+                    <ul class="header-dropdown__list-item">
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Single Items
+                          Comments</a>
+                      </li>
+                      <li class="headeu-dropdow__list">
+                        <a href="#" class="header-dropdown__link">Single
+                          Items Reviews</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Single
+                          Items Support</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Single
+                          Items FAQs</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Favorites Items</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Author
+                          Profile</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Author
+                          Items</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Customer
+                          Reviews</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Followers</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Following</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Product
+                          View Variations</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-dropdown-box">
+                    <div class="header-dropdown__title">
+                      <a class="header-dropdown__link header-dropdown__link--title" href="#">Dashboard</a>
+
+                    </div>
+                    <ul class="header-dropdown__list-item">
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Dashboard</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Account Settings</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Author Purchases</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Items Rating</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Add Credits</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Statements</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Invoice</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Upload Item</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link"> Edit Items</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Withdrawals</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Add Payment Method</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-dropdown-box">
+                    <div class="header-dropdown__title">
+                      <a class="header-dropdown__link header-dropdown__link--title" href="#">Others Pages</a>
+                    </div>
+                    <ul class="header-dropdown__list-item">
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Notifcations</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Message Inbox</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Message Compose</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Shopping Cart</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Checkout</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Login</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Register</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Recovery Password</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Support Forum</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Forum Details</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link"> How It Works</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-dropdown-box">
+                    <div class="header-dropdown__title dropdown-title">Others Pages</div>
+                    <ul class="header-dropdown__list-item">
+                      <li class="headeu-dropdow__list">
+                        <a href="#" class="header-dropdown__link">About Us</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Pricing Plan</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Testimonials</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">FAQs</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">FAQs Details</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Affiliates</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Terms & Conditions</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Blog V-1</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link"> Blog V-2</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Blog Details</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Contact Us</a>
+                      </li>
+                      <li class="header-dropdown__list">
+                        <a href="#" class="header-dropdown__link">Menu & Footer
+                          Variation</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </ul>
           </nav>
           <div class="header__box">
@@ -81,9 +894,9 @@
             <a class="mein-screen__link mein-screen__link--right" href="#">Popular Products</a>
           </div>
           <div class="product__search">
-            <div class="product__search-box1 search-box">
+            <div class="product__box--1 product__box">
               <form class="product__search-input" action="">
-                <input class="product__search-box" type="text" placeholder="Search your products...">
+                <input class="product__search-box" type="search" placeholder="Search your products...">
                 <select class="product__search-list">
                   <option value="">All Categories</option>
                   <option value="">WordPress</option>
@@ -94,8 +907,8 @@
                 <button class="product__search-btn" type="submit">Search Now</button>
               </form>
             </div>
-            <div class="product__search-box2 search-box"></div>
-            <div class="product__search-box3 search-box"></div>
+            <div class="product__box--2 product__box"></div>
+            <div class="product__box--3 product__box"></div>
           </div>
         </div>
       </div>
@@ -147,101 +960,129 @@
     <section class="weekly-slider">
       <div class="container">
         <div class="weekly-slider__title">Weekly Featured Products</div>
-        <div style="width: 100%;">
-          <div class="weekly-slider__images">
-            <div class="weekly-slider__item">
-              <div class="weekly-slider__box-img">
-                <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="Images WordPress">
-                <a class="weekly-slider__link weekly-slider__link-more" href="#">More Info </a>
-                <a class="weekly-slider__link weekly-slider__link-demo " href="#">Live Demo</a>
-              </div>
+        <div class="weekly-slider__images">
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__box-img">
+              <img class="weekly-slider__item1" src="images/slider/Wordpress2.jpg" alt="Images WordPress">
+              <a class="weekly-slider__link weekly-slider__link-more" href="#">More Info </a>
+              <a class="weekly-slider__link weekly-slider__link-demo " href="#">Live Demo</a>
             </div>
-            <div class="weekly-slider__item">
-              <div class="weekly-slider__info">
-                <div class="weekly-slider__desc-title">One Page Resume Template</div>
-                <div class="weekly-slider__desc-icon">
-                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                  <span class="newest-list__name-company">AazzTech</span>
-                </div>
-                <div class="weekly-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo
-                  ut
-                  scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                  pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                </div>
-                <div class="weekly-slider__desc-btn">
-                  <button class="weekly-slider__btn" type="button">website</button>
-                  <button class="weekly-slider__btn" type="button">plugin</button>
-                  <button class="weekly-slider__btn" type="button">landing page</button>
-                </div>
-                <div class="weekly-slider__desc-info">
-                  <div class="weekly-slider__desc-info-inner">
-                    <div class="weekly-slider__desc-info-icon">
-                      <span class="weekly-slider__price">$10 - $50</span>
-                      <span class="invisible__text">
-                        Heart
-                        <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">46</span>
-                      </span>
-                      <span class="invisible__text">
-                        Cart
-                        <span class="icon-shopping-cart content-cart--blue"></span>
-                        <span class="content-cart--number">634</span>
-                      </span>
-                    </div>
-                    <div class="rate-star"></div>
+          </div>
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__info">
+              <div class="weekly-slider__desc-title">One Page Resume Template</div>
+              <div class="weekly-slider__desc-icon">
+                <a class="link" href="#">
+                  <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="foto-user">
+                </a>
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">AazzTech</a>
+                </span>
+                <a class="link" href="#">
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__wordpress">WordPress</span>
+                </a>
+              </div>
+              <div class="weekly-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="weekly-slider__desc-btn">
+                <button class="weekly-slider__btn" type="button">website</button>
+                <button class="weekly-slider__btn" type="button">plugin</button>
+                <button class="weekly-slider__btn" type="button">landing page</button>
+              </div>
+              <div class="weekly-slider__desc-info">
+                <div class="weekly-slider__desc-info-inner">
+                  <div class="weekly-slider__desc-info-icon">
+                    <span class="weekly-slider__price">$10 - $50</span>
+                    <button class="invisible__text">
+                      Heart
+                      <span class="icon-heart-o  content__heart content__heart--pink"></span>
+                      <span class="content-heart">46</span>
+                    </button>
+                    <button class="invisible__text">
+                      Cart
+                      <span class="lnr-cart content-cart content-cart--blue"></span>
+                      <span class="content-cart content-cart--number">634</span>
+                    </button>
                   </div>
+                  <div class="rate-star"></div>
                 </div>
               </div>
             </div>
-            <div class="weekly-slider__item">
-              <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="image WordPress">
+          </div>
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__box-img">
+              <img class="weekly-slider__item1" src="images/slider/Wordpress2.jpg" alt="image WordPress">
+              <a class="weekly-slider__link weekly-slider__link-more" href="#">More Info </a>
+              <a class="weekly-slider__link weekly-slider__link-demo " href="#">Live Demo</a>
             </div>
-            <div class="weekly-slider__item">
-              <div style="padding: 25px">
-                <div class="weekly-slider__desc-title">Two Page Resume Template</div>
-                <div class="weekly-slider__desc-icon">
-                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                  <span class="newest-list__name-company">AazzTech</span>
-                </div>
-                <div class="weekly-slider__desc-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, ut scelerisque the mattis.
-                </div>
-                <div class="weekly-slider__desc-btn">
-                  <button class="weekly-slider__btn" type="button">website</button>
-                  <button class="weekly-slider__btn" type="button">plugin</button>
-                  <button class="weekly-slider__btn" type="button">landing page</button>
-                </div>
-                <div class="weekly-slider__desc-info">
-                  <div class="weekly-slider__desc-info-inner">
-                    <div class="weekly-slider__desc-info-icon">
-                      <span class="weekly-slider__price">$10 - $50</span>
-                      <span class="invisible__text">
-                        Heart
-                        <span class="icon-heart-o content-heart--pink"></span>
-                        <span class="content-heart">46</span>
-                      </span>
-                      <span class="invisible__text">
-                        Cart
-                        <span class="icon-shopping-cart content-cart--blue"></span>
-                        <span class="content-cart--blue">634</span>
-                      </span>
-                    </div>
-                    <div class="rate-star"></div>
+          </div>
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__info">
+              <div class="weekly-slider__desc-title">Two Page Resume Template</div>
+              <div class="weekly-slider__desc-icon">
+                <a class="link" href="#">
+                  <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="foto-user">
+                </a>
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">AazzTech</a>
+                </span>
+                <a class="link" href="#">
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__wordpress">WordPress</span>
+                </a>
+              </div>
+              <div class="weekly-slider__desc-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, ut scelerisque the mattis.
+              </div>
+              <div class="weekly-slider__desc-btn">
+                <button class="weekly-slider__btn" type="button">website</button>
+                <button class="weekly-slider__btn" type="button">plugin</button>
+                <button class="weekly-slider__btn" type="button">landing page</button>
+              </div>
+              <div class="weekly-slider__desc-info">
+                <div class="weekly-slider__desc-info-inner">
+                  <div class="weekly-slider__desc-info-icon">
+                    <span class="weekly-slider__price">$10 - $50</span>
+                    <button class="invisible__text">
+                      Heart
+                      <span class="icon-heart-o content__heart content__heart--pink"></span>
+                      <span class="content-heart">46</span>
+                    </button>
+                    <button class="invisible__text">
+                      Cart
+                      <span class="lnr-cart content-cart content-cart--blue"></span>
+                      <span class="content-cart content-cart--blue">634</span>
+                    </button>
                   </div>
+                  <div class="rate-star"></div>
                 </div>
               </div>
             </div>
-            <div class="weekly-slider__item">
-              <img class="weekly-slider__item1" src="images/slider/Wordpress1.jpg" alt="slider-wordpress">
+          </div>
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__box-img">
+              <img class="weekly-slider__item1" src="images/slider/Wordpress2.jpg" alt="slider-wordpress">
+              <a class="weekly-slider__link weekly-slider__link-more" href="#">More Info </a>
+              <a class="weekly-slider__link weekly-slider__link-demo " href="#">Live Demo</a>
             </div>
-            <div class="weekly-slider__item">
-              <div style="padding: 25px">
-                <div class="weekly-slider__desc-title">Three Page Resume Template</div>
-                <div class="weekly-slider__desc-icon">
-                  <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                  <span class="newest-list__name-company">AazzTech</span>
-                </div>
+          </div>
+          <div class="weekly-slider__item">
+            <div class="weekly-slider__info">
+              <div class="weekly-slider__desc-title">Three Page Resume Template</div>
+              <div class="weekly-slider__desc-icon">
+                <a class="link" href="#">
+                  <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="foto-user">
+                </a>
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">AazzTech</a>
+                </span>
+                <a class="link" href="#">
+                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                  <span class="newest-list__wordpress">WordPress</span>
+                </a>
               </div>
               <div class="weekly-slider__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
                 ut
@@ -261,13 +1102,13 @@
                     <span class="weekly-slider__price">$10 - $50</span>
                     <span class="invisible__text">
                       Heart
-                      <span class="icon-heart-o content-heart--pink"></span>
+                      <span class="icon-heart-o content__heart content__heart--pink"></span>
                       <span class="content-heart">46</span>
                     </span>
                     <span class="invisible__text">
                       Cart
-                      <span class="icon-shopping-cart content-cart--blue"></span>
-                      <span class="content-cart--blue">634</span>
+                      <span class="lnr-cart content-cart content-cart--blue"></span>
+                      <span class="content-cart content-cart--blue">634</span>
                     </span>
                   </div>
                   <div class="rate-star"></div>
@@ -276,9 +1117,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      </div>
       </div>
     </section>
     <!-- section newest-list -->
@@ -298,15 +1136,20 @@
           </div>
           <div class="newest-list__list">
             <ul class="newest-list__menu-list">
-              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Trending items</button>
+              <li class="newest-list__menu-item">
+                <button class="newest-list__menu-btn">Trending items</button>
               </li>
-              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Best seller</button>
+              <li class="newest-list__menu-item">
+                <button class="newest-list__menu-btn">Best seller</button>
               </li>
-              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">Best rating</button>
+              <li class="newest-list__menu-item">
+                <button class="newest-list__menu-btn">Best rating</button>
               </li>
-              <li class="newest-list__menu-item"><button class="newest-list__menu-btn"> Low price</button>
+              <li class="newest-list__menu-item">
+                <button class="newest-list__menu-btn"> Low price</button>
               </li>
-              <li class="newest-list__menu-item"><button class="newest-list__menu-btn">High price</button>
+              <li class="newest-list__menu-item">
+                <button class="newest-list__menu-btn">High price</button>
               </li>
             </ul>
           </div>
@@ -325,18 +1168,24 @@
           <div class="newest-list__box-item mix category-plugin" data-order="1">
             <div class="newest-list__box-img">
               <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
-              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
-              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+              <a class="newest-list__link newest-list__link-more" href="#">More Info</a>
+              <a class="newest-list__link newest-list__link-demo" href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">E-commerce Shopping Cart</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Theme-Valley</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Theme-Valley</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">Plugin</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">Plugin</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -344,40 +1193,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$20</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$20</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">90</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">90</span>
+                  </button>
                 </div>
-                <div class="newest-list__info-icon--splitright"></div>
+                <div class="newest-list__border"></div>
                 <div class="rate-star"></div>
-                <span class="invisible__text">
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">246</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">246</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="newest-list__box-item mix category-psd" data-order="2">
             <div class="newest-list__box-img">
               <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
-              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-more" href="#">More Info</a>
               <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Marketify Coffee Shop</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">EchoTheme</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">EchoTheme</a>
+                </span>
                 <span class="invisible__text">
                   Wordpress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">PSD</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">PSD</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -385,21 +1241,22 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$18</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$18</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">48</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">48</span>
+                  </button>
                 </div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">50</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">50</span>
+                </button>
               </div>
             </div>
           </div>
@@ -410,14 +1267,20 @@
               <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Bryson - Portfolio Template</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Artcorner</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Artcorner</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype ">HTML</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">HTML</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -425,41 +1288,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">56</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">68</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">68</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="newest-list__box-item mix category-html" data-order="4">
             <div class="newest-list__box-img">
-              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
               <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
               <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">E-commerce Shopping Cart</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Design-Hub</span>
-
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Design-Hub</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">Plugin</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">Plugin</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -467,22 +1336,23 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10-50</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10-50</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">90</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">90</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">45</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">45</span>
+                </button>
               </div>
             </div>
           </div>
@@ -493,14 +1363,20 @@
               <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Marketify Coffee Shop</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">AazzTech</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">AazzTech</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">PSD</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">PSD</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -508,40 +1384,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10-50</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10-50</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">48</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">48</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">50</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">50</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="newest-list__box-item mix category-html" data-order="6">
             <div class="newest-list__box-img">
-              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
               <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
               <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
             </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Bryson - Portfolio Template</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Coder-Lab</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Coder-Lab</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">HTML</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">HTML</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -549,29 +1432,30 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span><span
+                      class="content-heart">56</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">68</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">68</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="newest-list__btn-inner">
-        <button class="newest-list__btn-all--new" type="button">All New Products</button>
+        <button class="newest-list__btn-all newest-list__btn-all--new" type="button">All New Products</button>
       </div>
       </div>
       </div>
@@ -584,16 +1468,26 @@
         </div>
         <div class="goods-slider__items">
           <div class="goods-slider__box ">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">E-commerce Shopping Cart</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Theme-Valley</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Theme-Valley</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">Plugin</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">Plugin</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -601,37 +1495,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$20</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$20</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
                     <span class="content-heart">90</span>
-                  </span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">246</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">246</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="goods-slider__box">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Marketify Coffee Shop</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">EchoTheme</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="img-user">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">EchoTheme</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>>
-                  <span class="newest-list__cmstype">PSD</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>>
+                    <span class="newest-list__cmstype">PSD</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -639,37 +1543,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$18</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$18</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
                     <span class="content-heart">48</span>
-                  </span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">68</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">68</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="goods-slider__box">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image WordPress">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Bryson - Portfolio Template</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Coder-Lab</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Coder-Lab</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">HTML</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">HTML</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -677,36 +1591,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">56</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--number">68</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--number">68</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="goods-slider__box">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image PSD">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Marketify Coffee Shop</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Marketify Coffee Shop</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">EchoTheme</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">EchoTheme</a>
+                </span>
                 <span class="invisible__text">
                   logo psd
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">PSD</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">PSD</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -714,36 +1639,46 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$18</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$18</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
                     <span class="content-heart">48</span>
-                  </span>
+                  </button>
                 </div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--blue">50</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--blue">50</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="goods-slider__box">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="image HTML">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">Bryson - Portfolio Template</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">Bryson - Portfolio Template</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Artcorner</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Artcorner</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype ">HTML</span>
+                  <a class="link-cmstype" href="#">
+                    <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">HTML</span>
+                  </a>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -751,36 +1686,47 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="nnewest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$10</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$10</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span><span class="content-heart">56</span>
-                  </span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
+                    <span class="content-heart">56</span>
+                  </button>
                 </div>
                 <div class="rate-star"></div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--blue">68</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--blue">68</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="goods-slider__box">
-            <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="WordPress">
+            <div class="newest-list__box-img">
+              <img class="newest-list__images" src="images/newest-list/wordpress.jpg" alt="wordpress">
+              <a class="newest-list__link newest-list__link-more" href="#">More Info </a>
+              <a class="newest-list__link newest-list__link-demo " href="#">Live Demo</a>
+            </div>
             <div class="newest-list__box-content">
-              <p class="newest-list__heading">E-commerce Shopping Cart</p>
+              <div class="newest-list__heading">
+                <a class="link" href="#">E-commerce Shopping Cart</a>
+              </div>
               <div class="newest-list__company">
-                <img class="newest-list__logo-company" src="images/Ellipse 6.png" alt="logo-company">
-                <span class="newest-list__name-company">Theme-Valley</span>
+                <img class="newest-list__logo-company" src="images/slider/gl.jpg" alt="logo-company">
+                <span class="newest-list__name-company">
+                  <a class="link" href="#">Theme-Valley</a>
+                </span>
                 <span class="invisible__text">
                   WordPress
-                  <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
-                  <span class="newest-list__cmstype">Plugin</span>
+                  <a class="link-cmstype" href="#"><span class="icon-wordpress newest-list__cmstype"
+                      aria-hidden="true"></span>
+                    <span class="newest-list__cmstype">Plugin</a>
+                </span>
                 </span>
               </div>
               <div class="newest-list__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -788,22 +1734,22 @@
                 the mattis, leo quam aliquet congue.
               </div>
             </div>
-            <div class="newest-list__box-content--bottom">
+            <div class="newest-list__box newest-list__box--bottom">
               <div class="newest-list__info-icon">
-                <div class="newest-list__info-icon--splitleft">
-                  <span class="newest-list__price--gray">$20</span>
-                  <span class="invisible__text">
+                <div class="newest-list__border">
+                  <span class="newest-list__price">$20</span>
+                  <button class="invisible__text">
                     Heart
-                    <span class="icon-heart-o content-heart--pink"></span>
+                    <span class="icon-heart-o content__heart content__heart--pink"></span>
                     <span class="content-heart">90</span>
-                  </span>
+                  </button>
                 </div>
-                <div class="newest-list__info-icon--splitright"></div>
-                <span class="invisible__text">
+                <div class="newest-list__border"></div>
+                <button class="invisible__text">
                   Cart
-                  <span class="icon-shopping-cart content-cart--blue"></span>
-                  <span class="content-cart--blue">246</span>
-                </span>
+                  <span class="lnr-cart content-cart content-cart--blue"></span>
+                  <span class="content-cart content-cart--blue">246</span>
+                </button>
               </div>
             </div>
           </div>
@@ -815,32 +1761,44 @@
       <div class="container">
         <div class="our-counts__inner">
           <div class="our-counts__items-1">
-            <div class="our-counts__img-box our-counts__img-box1">
-              <img class="our-counts__image1" src="images/counts/case.png" alt="case">
+            <div class="our-counts__img-box our-counts__img-box--1">
+              <span class="invisible__text">
+                briefcase
+                <span class="lnr-briefcase lnr-briefcase--yellow"></span>
+              </span>
             </div>
             <div class="our-counts__price our-counts__price--yellow">38,436</div>
-            <div class="our-counts__desc our-counts__desc1">items for sale</div>
+            <div class="our-counts__desc our-counts__desc--1">items for sale</div>
           </div>
-          <div class=" our-counts__items-2">
-            <div class="our-counts__img-box our-counts__img-box2">
-              <img class="our-counts__image2" src="images/counts/cloud.png" alt="cloud">
+          <div class=" our-counts__items">
+            <div class="our-counts__img-box our-counts__img-box--2">
+              <span class="invisible__text">
+                cloud-download
+                <span class="lnr-cloud-download lnr-cloud-download--blue"></span>
+              </span>
             </div>
             <div class="our-counts__price our-counts__price--blue">3,736</div>
-            <div class="our-counts__desc our-counts__desc2">total sales</div>
+            <div class="our-counts__desc our-counts__desc--2">total sales</div>
           </div>
-          <div class=" our-counts__items-3">
-            <div class="our-counts__img-box our-counts__img-box3">
-              <img class="our-counts__image3" src="images/counts/smile.png" alt="smile">
+          <div class=" our-counts__items">
+            <div class="our-counts__img-box our-counts__img-box--3">
+              <span class="invisible__text">
+                smile
+                <span class="lnr-smile lnr-smile--green"></span>
+              </span>
             </div>
             <div class="our-counts__price our-counts__price--green">2,736</div>
-            <div class="our-counts__desc our-counts__desc3">happy customers</div>
+            <div class="our-counts__desc our-counts__desc--3">happy customers</div>
           </div>
           <div class="  our-counts__items-4">
-            <div class="our-counts__img-box our-counts__img-box4">
-              <img class="our-counts__image4" src="images/counts/users.png" alt="users">
+            <div class="our-counts__img-box our-counts__img-box--4">
+              <span class="invisible__text">
+                users
+                <span class="lnr-users lnr-users--red"></span>
+              </span>
             </div>
             <div class="our-counts__price our-counts__price--red">25,736</div>
-            <div class="our-counts__desc our-counts__desc4">members</div>
+            <div class="our-counts__desc our-counts__desc--4">members</div>
           </div>
         </div>
       </div>
@@ -850,7 +1808,8 @@
     <section class="advantage">
       <div class="container">
         <div class="advantage__header">
-          <div class="advantage__title">Why Choose <span class="advantage__name-company"> MartPlace</span>
+          <div class="advantage__title">Why Choose
+            <span class="advantage__name-company"> MartPlace</span>
           </div>
           <p class="advantage__text">Laborum dolo rumes fugats untras.
             Etharums ser quidem rerum facilis dolores nemis omnis fugats.
@@ -860,12 +1819,12 @@
         <div class="advantege__inner">
           <div class="advantege__item">
             <span class="number">01</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/profile.png" alt="icon-file">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-license advantege-box__icon advantege-box__icon--license "></span>
               </div>
-              <div class="advantege__box-title">One Time Payment</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">One Time Payment</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
                 congue is laoreet elit metus.</div>
@@ -873,25 +1832,26 @@
           </div>
           <div class="advantege__item">
             <span class="number">02</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/stick.png" alt="icon-wand">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-magic-wand advantege-box__icon advantege-box__icon--magic-wand "></span>
               </div>
-              <div class="advantege__box-title">Quality Products</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">Quality Products</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
-                congue is laoreet elit metus.</div>
+                congue is laoreet elit metus.
+              </div>
             </div>
           </div>
           <div class="advantege__item">
             <span class="number">03</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/lock.png" alt="icon-lock">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-lock advantege-box__icon advantege-box__icon--lnr-lock "></span>
               </div>
-              <div class="advantege__box-title">100% Secure Payment</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">100% Secure Payment</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
                 congue is laoreet elit metus.</div>
@@ -899,41 +1859,44 @@
           </div>
           <div class="advantege__item">
             <span class="number">04</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/chart-bars.png" alt="chart-bars">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-chart-bars advantege-box__icon advantege-box__icon--lnr-chart-bars "></span>
               </div>
-              <div class="advantege__box-title">Well Organized Code</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">Well Organized Code</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
-                congue is laoreet elit metus.</div>
+                congue is laoreet elit metus.
+              </div>
             </div>
           </div>
           <div class="advantege__item">
             <span class="number">05</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/leaf.png" alt="icon-leaf">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-leaf advantege-box__icon advantege-box__icon--lnr-leaf "></span>
               </div>
-              <div class="advantege__box-title">Life Time Free Update</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">Life Time Free Update</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
-                congue is laoreet elit metus.</div>
+                congue is laoreet elit metus.
+              </div>
             </div>
           </div>
           <div class="advantege__item">
             <span class="number">06</span>
-            <div class="advantege__box">
-              <div class="advantege__box-images">
-                <img class="advantage__icon" src="images/advantage/phone.png" alt="icon-phone">
+            <div class="advantege-box">
+              <div class="advantege-box__images">
+                <span class="lnr-phone advantege-box__icon advantege-box__icon--lnr-phone "></span>
               </div>
-              <div class="advantege__box-title">Fast and Friendly Support</div>
-              <div class="advantege__box-text">Nunc placerat mi id nisi interdum mollis.
+              <div class="advantege-box__title">Fast and Friendly Support</div>
+              <div class="advantege-box__text">Nunc placerat mi id nisi interdum mollis.
                 Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet diam
-                congue is laoreet elit metus.</div>
+                congue is laoreet elit metus.
+              </div>
             </div>
           </div>
         </div>
@@ -952,11 +1915,13 @@
         </div>
         <div class="split-space__shopping" style="background-image: url(images/split-space/BG-violet.png);">
           <img class="split-space__shopping-img" src="images/split-space/Icon_shopping.png" alt="Icon shopping">
-          <div class="split-space__title">Start Shopping Today</div>
-          <div class="split-space__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+          <div class="split-space__title split-space__title--shopping">Start Shopping Today</div>
+          <div class="split-space__text split-space__text--shopping">Nunc placerat mi id nisi interdum mollis. Praesent
+            pharetra, justo ut
             scelerisque
-            the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
-          <a class="split-space__link split-space__link-start" href="#">Start Shopping</a>
+            the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+          </div>
+          <a class="split-space__link split-space__link--start" href="#">Start Shopping</a>
         </div>
       </div>
     </section>
@@ -965,7 +1930,7 @@
       <div class="container">
         <div class="feedback__heading">
           <div class="feedback__title advantage__title">Our Clients
-            <span class="feedback__title--blue">Feedback</span>
+            <span class="feedback__title feedback__title--blue">Feedback</span>
           </div>
           <div class="feedback__text advantage__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum
             facilis
@@ -974,10 +1939,22 @@
         </div>
         <div class="feedback__inner">
           <div class="feedback__box">
+            <style>
+              .feedback__box:after {
+                content: "\e83f";
+                font-family: 'Linearicons-Free';
+                font-size: 60px;
+                color: #e8e8e8;
+                position: absolute;
+                right: 55px;
+                top: 40px;
+                font-weight: normal;
+              }
+            </style>
             <img class="feedback__foto-user" src="images/feedback/foto-user.jpg" alt="foto-user">
             <div class="feedback__info">
               <div class="feedback__user-name">Taofiqul Hakim</div>
-              <p class="feedback__user-info advantage__text">Product Designer</p>
+              <div class="feedback__user-info advantage__text">Product Designer</div>
             </div>
             <div class="feedback__box-text advantage__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
               justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
@@ -1026,16 +2003,17 @@
             </div>
           </div>
         </div>
-        <a class="feedback__link" href="#">View All Reviews </a>
+        <div class="feedback__link-inner">
+          <a class="feedback__link" href="#">View All Reviews </a>
+        </div>
       </div>
     </section>
     <!-- news -->
-
-
     <section class="news">
       <div class="container">
         <div class="news__heading ">
-          <div class="news__title advantage__title">Latest<span class="news__title--blue">News</span>
+          <div class="news__title advantage__title">Latest
+            <span class="news__title news__title--blue">News</span>
           </div>
           <div class="news__text advantage__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis
             dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
@@ -1054,16 +2032,17 @@
                   the mattis, leo quam aliquet congue.</div>
               </div>
               <div class="news__box-inner">
-                <div class="news__box-icons--border">
+                <div class="news__box-icon news__box-icons--border">
                   <span class="news__box-icon">
-                    <span class="icon-alarm news__box-icon--blue"></span>
-                    <date class="news__box-counter">24 Feb 2017</date>
+                    <span class="icon-alarm news__box-ico news__box-ico--blue"></span>
+                    <time class="news__box-counter">24 Feb 2017</time>
                   </span>
                 </div>
                 <div class="news__box-icons">
                   <span class="news__box-icon">
-                    <span class="icon-bubble2"></span> <span class="news__box-counter">45</span>
-                    <span class="icon-eye news__box-icon--eye"></span>
+                    <span class="lnr-bubble  "></span>
+                    <span class="news__box-counter">45</span>
+                    <span class="icon-eye news__box-icon news__box-icon--eye"></span>
                     <span class="news__box-counter">345</span>
                   </span>
                 </div>
@@ -1082,17 +2061,17 @@
                 </div>
               </div>
               <div class="news__box-inner">
-                <div class="news__box-icons--border">
+                <div class="news__box-icon news__box-icons--border">
                   <span class="news__box-icon">
-                    <span class="icon-alarm news__box-icon--blue"></span>
-                    <date class="news__box-counter">24 Feb 2017</date>
+                    <span class="icon-alarm news__box-ico news__box-ico--blue"></span>
+                    <time class="news__box-counter">24 Feb 2017</time>
                   </span>
                 </div>
                 <div class="news__box-icons">
                   <span class="news__box-icon">
-                    <span class="icon-bubble2"></span>
+                    <span class="lnr-bubble news__box-icon news__box-icon--bubble"></span>
                     <span class="news__box-counter">45</span>
-                    <span class="icon-eye news__box-icon--eye"></span>
+                    <span class="icon-eye news__box-icon news__box-icon--eye"></span>
                     <span class="news__box-counter">345</span>
                   </span>
                 </div>
@@ -1111,16 +2090,18 @@
                   the mattis, leo quam aliquet congue.</div>
               </div>
               <div class="news__box-inner">
-                <div class="news__box-icons--border">
+                <div class="news__box-icon news__box-icons--border">
                   <span class="news__box-icon">
-                    <span class="icon-alarm news__box-icon--blue"></span>
-                    <date class="news__box-counter">24 Feb 2017</date>
+                    <span class="icon-alarm news__box-ico news__box-ico--blue"></span>
+                    <time class="news__box-counter">24 Feb 2017</time>
                   </span>
                 </div>
                 <div class="news__box-icons">
                   <span class="news__box-icon">
-                    <span class="icon-bubble2"></span> <span class="news__box-counter">45</span>
-                    <span class="icon-eye news__box-icon--eye"></span> <span class="news__box-counter">345</span>
+                    <span class="lnr-bubble"></span>
+                    <span class="news__box-counter">45</span>
+                    <span class="icon-eye news__box-icon news__box-icon--eye"></span>
+                    <span class="news__box-counter">345</span>
                   </span>
                 </div>
               </div>
@@ -1137,41 +2118,54 @@
             <div class="benefit__item-images">
               <img class="benefit__item-pic" src="images/box/Icon_1.png" alt="image money">
             </div>
-            <div class="benefit__text">30 Days Money Back <span class="benefit__text--blue">Guarantee</span>
+            <div class="benefit__text">30 Days Money Back
+              <a class="benefit__text-link" href="#">
+                <span class="benefit__text benefit__text--blue"> Guarantee</span>
+              </a>
             </div>
           </div>
           <div class="benefit__item-right">
             <div class="benefit__item-images">
               <img class="benefit__item-pic" src="images/box/Icon_2.png" alt="image money">
             </div>
-            <div class="benefit__text">Fast and Friendly <span class="benefit__text--purple">Support</span>
+            <div class="benefit__text">Fast and Friendly
+              <a class="benefit__text-link" href="#">
+                <span class="benefit__text benefit__text--purple">Support</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- case -->
-    <section class="case">
-      <div class="container">
-        <div class="case__box">
-          <div class="case__title">Ready to Join Our Marketplace!</div>
-          <div class="case__text">Over 25,000 designers and developers trust the MartPlace.</div>
-          <a class="case__link" href="#">Join Us Today </a>
-        </div>
-      </div>
-    </section>
   </main>
+  <!-- case -->
+  <section class="case">
+    <div class="container">
+      <div class="case__box">
+        <div class="case__title">Ready to Join Our Marketplace!</div>
+        <div class="case__text">Over 25,000 designers and developers trust the MartPlace.</div>
+        <a class="case__link" href="#">Join Us Today </a>
+      </div>
+    </div>
+  </section>
+
   <!-- footer -->
   <section class="footer">
     <div class="container">
       <div class=" footer__inner">
         <div class="footer__item footer__item-contacts">
-          <img class="footer__logo footer__title" src="images/footer/MartPlace.png" alt="footer-logo">
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo footer__title" src="images/footer/MartPlace.png" alt="footer-logo">
+          </a>
           <div class="footer__text-contacts">Nunc placerat mi id nisi interdum they mollis.
             Praesent pharetra, justo ut scel erisque the mattis, leo quam.
           </div>
-          <a class="footer__link footer__link-phone" href="tel:67898752235"> Phone: +6789-875-2235</a>
-          <a class="footer__link footer__link-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+          <address class="phone">
+            <a class="footer__link footer__link-phone" href="tel:67898752235"> Phone: +6789-875-2235</a>
+          </address>
+          <address class="email">
+            <a class="footer__link footer__link-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+          </address>
           <address class="footer__address">202 New Hampshire Avenue
             Northwest #100, New York-2573
           </address>
@@ -1179,13 +2173,27 @@
         <div class="footer__item footer__item-menu">
           <div class="footer__title">Our Company </div>
           <ul class="footer__list">
-            <li class="footer__list-menu"><a href="#" class="footer__link">About Us </a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link">How It Work</a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link"> Affiliates</a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link">Testimonials</a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link">Contact Us</a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link">Copyright Notice</a></li>
-            <li class="footer__list-menu"><a href="#" class="footer__link">Blog</a></li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">About Us </a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">How It Work</a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link"> Affiliates</a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">Testimonials</a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">Copyright Notice</a>
+            </li>
+            <li class="footer__list-menu">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
           </ul>
         </div>
         <div class="footer__item footer__item-support">
@@ -1223,34 +2231,53 @@
             <input class="footer__input" type="email" placeholder="Enter email">
             <button class="footer__btn" type="submit">Submit</button>
           </form>
-          <ul class="footer__list footer__list-social">
-            <li class="footer__list-icon">
+          <ul class="footer-social footer-social__list">
+            <li class="footer-social__icon">
               <a href="#" class="footer__link">
-                <img src="images/footer/f.png" alt="icon facebook" class="footer__social-image"></a>
-            </li>
-            <li class="footer__list-icon">
-              <a href="#" class="footer__link">
-                <img src="images/footer/t.png" alt="icon Twitter" class="footer__social-image">
+                <span class="invisible__text">
+                  icon facebook
+                  <span class="icon-facebook footer-icon footer-icon__facebook"></span>
+                </span>
               </a>
             </li>
-            <li class="footer__list-icon">
+            <li class="footer-social__icon">
               <a href="#" class="footer__link">
-                <img src="images/footer/g.png" alt="icon google" class="footer__social-image">
+                <span class="invisible__text">
+                  icon twitter
+                  <span class="icon-twitter footer-icon footer-icon__twitter"></span>
+                </span>
               </a>
             </li>
-            <li class="footer__list-icon">
+            <li class="footer-social__icon">
               <a href="#" class="footer__link">
-                <img src="images/footer/4.png" alt="icon social" class="footer__social-image">
+                <span class="invisible__text">
+                  icon google
+                  <span class="icon-google footer-icon footer-icon__google"></span>
+                </span>
               </a>
             </li>
-            <li class="footer__list-icon">
+            <li class="footer-social__icon">
               <a href="#" class="footer__link">
-                <img src="images/footer/in.png" alt="icon social" class="footer__social-image">
+                <span class="invisible__text">
+                  icon pinterest
+                  <span class="icon-pinterest-p footer-icon footer-icon__pinterest"></span>
+                </span>
               </a>
             </li>
-            <li class="footer__list-icon">
+            <li class="footer-social__icon">
               <a href="#" class="footer__link">
-                <img src="images/footer/6.png" alt="icon social" class="footer__social-image">
+                <span class="invisible__text">
+                  icon linkedin
+                  <span class="icon-linkedin1 footer-icon footer-icon__linkedin"></span>
+                </span>
+              </a>
+            </li>
+            <li class="footer-social__icon">
+              <a href="#" class="footer__link">
+                <span class="invisible__text">
+                  icon dribbble
+                  <span class="icon-dribbble footer-icon footer-icon__dribbble"></span>
+                </span>
               </a>
             </li>
           </ul>
@@ -1259,8 +2286,12 @@
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <div class="footer__text-copy">©2017 <span class="footer__name-company">MartPlace.</span> All rights reserved.
-          Created by <a class="footer__bottom-link"> AazzTech</a></div>
+        <div class="footer__text-copy">©2017
+          <span class="footer__name-company">
+            <a class="footer__bottom-link" href="#">MartPlace.</a>
+          </span> All rights reserved.
+          Created by <a class="footer__bottom-link"> AazzTech</a>
+        </div>
       </div>
     </div>
   </section>
