@@ -21,13 +21,14 @@ $blue: #0674ec;
 }
 
 @mixin link {
-  border-radius: 25px;
+  border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 53px;
   transition: all 1s;
   cursor: pointer;
   text-align: center;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 @mixin footer-text {
@@ -35,5 +36,11 @@ $blue: #0674ec;
   font-weight: 400;
   line-height: 28px;
   color: #ababab;
+}
+
+@mixin dropdown-user {
+  font-family: 'Linearicons-Free';
+  position: absolute;
+  left: 20px;
 }
 

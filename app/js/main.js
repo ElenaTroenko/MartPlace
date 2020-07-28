@@ -61,7 +61,7 @@ $(function(){
   });
 
 
-  $('.header__icon-envelope').on('click', function () {
+  $('.header__icon--envelope').on('click', function () {
     $('.header-massages').slideToggle();
   });
  
@@ -70,11 +70,11 @@ $(function(){
     $('.dropdown-user').slideToggle();
   });
 
-  $('.header__icon-alarm').on('click', function () {
+  $('.header__icon--alarm').on('click', function () {
     $('.dropdown-notification').slideToggle();
   });
 
-  $('.header__icon-cart').on('click', function () {
+  $('.header__icon--cart').on('click', function () {
     $('.dropdown-cart').slideToggle();
   });
   var mixer = mixitup('.newest-list__box');

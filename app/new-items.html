@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__inner">
+              <a href="#" class="header-top__logo-link"><img src="images/MartPlace.png" alt="logo" class="header-top__logo">
+              </a>
+              <div class="header-box">
+                <a class="header-top__link" href="#">Become a Seller</a>
+                <div class="header__icons">
+                  <button class="header__icon-link" type="button">
+                    Notification
+                    <span class="icon-bell-o header__icon header__icon--alarm">
+                      <span class="header__icon-alarm--messages">
+                        26
+                      </span>
+                    </span>
+                  </button>
+                  <!-- dropdown   Notification-->
+                  <div class="dropdown-notification">
+                    <div class="dropdown-notification__title-inner">
+                      <div class="dropdown-notification__title ">My Notifications</div>
+                      <div class="dropdown-notification__view">
+                        <a class="header-view" href="#">View All</a>
+                      </div>
+                    </div>
+                    <ul class="dropdown-notification__list">
+                      <li class="dropdown-notification__item">
+                        <div class="dropdown-notification__inner">
+                          <div class="dropdown-notification__image">
+                            <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                          </div>
+                          <div class="dropdown-notification__content">
+                            <span class="notification__user-name"> Anderson</span>
+                            <span class="notification__status">added to Favourite</span>
+                            <div class="notification__theme"><a class="notification__theme-link">Marketify Coffee Shop</a>
+                            </div>
+                            <div class="notification__time"> Just now</div>
+                          </div>
+                          <button class="invisible__text" type="button">Heart
+                            <span class="lnr-heart content-icon content__heart--blue"></span>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="dropdown-notification__item dropdown-notification__item--two">
+                        <div class="dropdown-notification__inner">
+                          <div class="dropdown-notification__image">
+                            <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                          </div>
+                          <div class="dropdown-notification__content">
+                            <span class="notification__user-name">Michael Jorden</span>
+                            <span class="notification__status">commented </span>
+                            <div class="notification__theme">on
+                              <a class="notification__theme-link"> MartPlace Extension
+                                Bundle</a>
+                            </div>
+                            <div class="notification__time"> 2 hours ago</div>
+                          </div>
+                          <button class="invisible__text" type="button">Massage
+                            <span class="lnr-bubble content-icon content__bubble--purple"></span>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="dropdown-notification__item dropdown-notification__item--three">
+                        <div class="dropdown-notification__inner">
+                          <div class="dropdown-notification__image"><img class="dropdown-notification__avatar "
+                              src="images/icon-avatar.jpg" alt="user avatar">
+                          </div>
+                          <div class="dropdown-notification__content">
+                            <span class="notification__user-name">Moshed</span>
+                            <span class="notification__status">Purchased</span>
+                            <div class="notification__theme">
+                              <a class="notification__theme-link">Bryson-Responsive
+                                Template</a>
+                            </div>
+                            <div class="notification__time">6 hours ago</div>
+                          </div>
+                          <button class="invisible__text" type="button">Cart
+                            <span class="lnr-cart content-icon content__cart--red"></span>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="dropdown-notification__item dropdown-notification__item--four">
+                        <div class="dropdown-notification__inner">
+                          <div class="dropdown-notification__image">
+                            <img class="dropdown-notification__avatar " src="images/icon-avatar.jpg" alt="user avatar">
+                          </div>
+                          <div class="dropdown-notification__content">
+                            <span class="notification__user-name"> Tamim</span>
+                            <span class="notification__status"> wrote a
+                              review on</span>
+                            <div class="notification__theme">
+                              <a class="notification__theme-link">Rida-Responsive vCard Temp...</a>
+                            </div>
+                            <div class="notification__time"> 2 days ago</div>
+                          </div>
+                          <button class="invisible__text" type="button">Heart
+                            <span class="lnr-star content-icon content__star--green"></span>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end dropdown   Notification -->
+    
+                  <button class="header__icon-link" type="button">
+                    Email
+                    <span class="icon-envelope-o header__icon header__icon--envelope">
+                      <span class="header__icon-notification">
+                        6
+                      </span>
+                    </span>
+                  </button>
+                  <!-- dropdown massege -->
+                  <div class="header-massages">
+                    <div class="header-massages__title-inner">
+                      <div class="header-massages__title title">My Messages</div>
+                      <a href="#" class="header-view">View All</a>
+                    </div>
+                    <ul class="header-massages__list">
+                      <li class="header-massages__item">
+                        <div class="header-massages__inner">
+                          <div class="header-avatar">
+                            <a href="#" class="header-massages__link">
+                              <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                            </a>
+                          </div>
+                          <div>
+                            <div class="header-box">
+                              <div class="header-massages__name">
+                                <a class="header-massages__link" href="#">Washim</a>
+                              </div>
+                              <div class="header-massages__time">
+                                <a class="header-massages__time" href="#">Just now</a>
+                              </div>
+                            </div>
+                            <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header-massages__item">
+                        <div class="header-massages__inner">
+                          <div class="header-avatar">
+                            <a href="#" class="header-massages__link">
+                              <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                            </a>
+                          </div>
+                          <div>
+                            <div class="header-box">
+                              <div class="header-massages__name">
+                                <a class="header-massages__link" href="#">Bulbul Ahmed</a>
+                              </div>
+                              <div class="header-massages__time">
+                                <a class="header-massages__time" href="#">2 hours ago</a>
+                              </div>
+                            </div>
+                            <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header-massages__item">
+                        <div class="header-massages__inner">
+                          <div class="header-avatar">
+                            <a href="#" class="header-massages__link">
+                              <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                            </a>
+                          </div>
+                          <div>
+                            <div class="header-box">
+                              <div class="header-massages__name massege-name"><a class="header-massages__link"
+                                  href="#">Bulbul Ahmed</a>
+                              </div>
+                              <div class="header-massages__time">
+                                <a class="header-massages__time header-massages__time--grey" href="#">Jul 16</a>
+                              </div>
+                            </div>
+                            <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header-massages__item">
+                        <div class="header-massages__inner">
+                          <div class="header-avatar">
+                            <a href="#" class="header-massages__link">
+                              <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                            </a>
+                          </div>
+                          <div>
+                            <div class="header-box">
+                              <div class="header-massages__name name massege-name__icon">
+                                <a class="header-massages__link" href="#">Themeluva</a>
+                              </div>
+                              <div class="header-massages__time">
+                                <a class="header-massages__time header-massages__time--grey" href="#">May 23</a>
+                              </div>
+                            </div>
+                            <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header-massages__item">
+                        <div class="header-massages__inner">
+                          <div class="header-avatar">
+                            <a href="#" class="header-massages__link">
+                              <img src="images/slider/gl.jpg" alt="avatar" class="header-massages__avatar">
+                            </a>
+                          </div>
+                          <div>
+                            <div class="header-box">
+                              <div class="header-massages__name massege-name__icon">
+                                <a class="header-massages__link"
+                                  href="#">Adnan</a>
+                                </div>
+                              <div class="header-massages__time">
+                                <a class="header-massages__time header-massages__time--grey" href="#">Mar 26</a>
+                              </div>
+                            </div>
+                            <div class="header-massages__text">Hello John Smith! Nunc placerat id...</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end dropdown massege -->
+    
+                  <button type="button" class="header__icon-link">
+                    Cart
+                    <span class="lnr-cart header__icon header__icon--cart">
+                      <span class="header__cart--number">
+                        2
+                      </span>
+                    </span>
+                  </button type="button">
+                  <!-- dropdown cart -->
+                  <div class="dropdown-cart">
+                    <ul class="dropdown-cart__list">
+                      <li class="dropdown-cart__item">
+                        <div class="dropdown-cart__inner">
+                          <div class="dropdown-cart__image"><img class="dropdown-cart__theme " src="images/lending.jpg"
+                              alt="user avatar">
+                          </div>
+    
+                          <div class="dropdown-cart__content">
+                            <span class="cart-theme"> Finance and Consulting Business Theme</span>
+    
+                            <div class="dropdown-cart__cmstype">
+                              <a class="link" href="#">
+                                <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                                <span class="newest-list__wordpress">WordPress</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div><button class="invisible__text" type="button">basket
+                              <span class="lnr-trash content-icon content-icon--grey"></span>
+                            </button>
+                            <div class="dropdown-cart__price">$60</div>
+                          </div>
+                      </li>
+                      <li class="dropdown-cart__item">
+                        <div class="dropdown-cart__inner">
+                          <div class="dropdown-cart__image">
+                            <img class="dropdown-cart__theme " src="images/lending.jpg" alt="user avatar">
+                          </div>
+                          <div class="dropdown-cart__content">
+                            <span class="cart-theme">Flounce - Multipurpose OpenCart Theme</span>
+                            <div class="dropdown-cart__cmstype">
+                              <a class="link" href="#">
+                                <span class="icon-wordpress newest-list__cmstype" aria-hidden="true"></span>
+                                <span class="newest-list__wordpress">WordPress</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div> <button class="invisible__text" type="button">basket
+                              <span class="lnr-trash content-icon content-icon--grey"></span>
+                            </button>
+                            <div class="dropdown-cart__price dropdown-cart__price--two">$20</div>
+                          </div>
+                      </li>
+                      <li class="dropdown-cart__item">
+                        <div class="dropdown-cart__total">
+                          Total : &nbsp;&nbsp; $80
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="dropdown-cart__btn">
+                      <button class="dropdown-cart__button" type="button">Go to Cart</button>
+                      <button class="dropdown-cart__button dropdown-cart__button--right" type="button">Go to
+                        Checkout</button>
+                    </div>
+                  </div>
+                  <!-- end dropdown cart -->
+                </div>
+                <a class="header__avatar-link" href="#">
+                  <img class="header-box__avatar" src="images/header_avatar.jpg" alt="avatar">
+                </a>
+                <div class="header__user-name">
+                  <a class="header__name-link link" href="#">Taofiq Hakim</a>
+                  <div class="header__user-account">$20.45</div>
+                </div>
+                <!-- dropdown-user -->
+                <div class="dropdown-user">
+                  <ul class="dropdown-user__list">
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link1"> Profile
+                        Page</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link2">Dashboard</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link3"> Account
+                        Settings</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link4"> Your
+                        Purchases</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link5">Your
+                        Favorites</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link6">Add
+                        Credits</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link7"> Sales
+                        Statements</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link8"> Edit
+                        Item</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link9">Landing
+                        Pages</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link10">
+                        Withdrawals</a>
+                    </li>
+                    <li class="dropdown-user__item">
+                      <a href="#" class="dropdown-user__link dropdown-user__link11">
+                        Logout</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end dropdown-user -->
+    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="container">
+            <div class="header__inner">
+              <nav class="header__menu-nav header__nav">
+                <buton class="lnr-menu header__btn-nav"></buton>
+                <ul class="header__mobile-list">
+                  <li class="header__item-home header__item">
+                    <a class="header__link link header__link--mobile" href="#">HOME</a>
+                  </li>
+                  <li class="header__item-products header__item">
+                    <a class="header__link link header__link--mobile" href="#">all products</a>
+                  </li>
+                  <li class="header__item-wordpress header__item">
+                    <a class="header__link link header__link--mobile" href="#">wordpress</a>
+                  </li>
+                  <li class="header__item header__item">
+                    <a class="header__link link header__link--mobile" href="#">festures</a>
+                  </li>
+                  <li class="header__item header__item-pages">
+                    <a class="header__link link header__link--mobile" href="#">Pages</a>
+                  </li>
+                </ul>
+                <ul class="header__menu-list">
+                  <li class="header__item-home header__item">
+                    <a class="header__link link mobile-link" href="#">HOME</a>
+                  </li>
+    
+                  <!-- dropdown-home -->
+                  <div class="dropdown-home">
+                    <ul class="dropdown-home__list">
+                      <li class="dropdown-home__item">
+                        <a href="#" class="dropdown-home__link">Home One Multi User</a>
+                      </li>
+                      <li class="dropdown-home__item">
+                        <a href="#" class="dropdown-home__link">Home Two Single User</a>
+                      </li>
+                      <li class="dropdown-home__item">
+                        <a href="#" class="dropdown-home__link">Home Three Product</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end dropdown-home -->
+    
+                  <li class="header__item-products header__item">
+                    <a class="header__link link" href="#">all products</a>
+                  </li>
+    
+                  <!-- dropdown-products -->
+                  <div class="dropdown-products">
+                    <ul class="dropdown-products__list">
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Recent Items</a>
+                      </li>
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Popular Items</a>
+                      </li>
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Featured Items</a>
+                      </li>
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Free Templates</a>
+                      </li>
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Follow Feed</a>
+                      </li>
+                      <li class="dropdown-products__item">
+                        <a href="#" class="dropdown-products__link">Top Authors</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end dropdown-products -->
+    
+                  <li class="header__item-wordpress header__item">
+                    <a class="header__link link" href="#">wordpress</a>
+                  </li>
+                  <!-- dropdown-wordpress -->
+                  <div class="dropdown-wordpress">
+                    <ul class="dropdown-wordpress__list">
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Popular Items</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link"> Admin Templates</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Blog / Magazine /
+                          News</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link"> Creative</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Corporate
+                          Business</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Resume Portfolio</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">eCommerce</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Entertainment</a>
+                      </li>
+                      <li class="dropdown-wordpress__item">
+                        <a href="#" class="dropdown-wordpress__link">Landing Pages</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end dropdown-wordpress -->
+    
+                  <li class="header__item header__item">
+                    <a class="header__link link" href="#">festures</a>
+                  </li>
+                  <li class="header__item header__item-pages">
+                    <a class="header__link link" href="#">Pages</a>
+                  </li>
+                  <!-- header-dropdown page -->
+                  <div class="header-dropdown">
+                    <div class="header-dropdown-block">
+                      <div class="header-dropdown-box">
+                        <div class="header-dropdown__title">
+                          <a class="header-dropdown__link header-dropdown__link--title" href="#"> MartPlace Pages</a>
+                        </div>
+                        <ul class="header-dropdown__list-item">
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Home
+                              Page One</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link"> Home
+                              Page Two</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Home
+                              Page Three</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Products
+                              Grid</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">
+                              Products List</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Category
+                              Grid Sidebar</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Category
+                              List Sidebar</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Search
+                              Product</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link"> Single
+                              Product V-1</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Single
+                              Product V-2</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Single
+                              Product V-3</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-dropdown-box">
+                        <div class="header-dropdown__title dropdown-title">MartPlace Pages</div>
+                        <ul class="header-dropdown__list-item">
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Single Items
+                              Comments</a>
+                          </li>
+                          <li class="headeu-dropdow__list">
+                            <a href="#" class="header-dropdown__link">Single
+                              Items Reviews</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Single
+                              Items Support</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Single
+                              Items FAQs</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Favorites Items</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Author
+                              Profile</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Author
+                              Items</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Customer
+                              Reviews</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Followers</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Following</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Product
+                              View Variations</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-dropdown-box">
+                        <div class="header-dropdown__title">
+                          <a class="header-dropdown__link header-dropdown__link--title" href="#">Dashboard</a>
+                        </div>
+                        <ul class="header-dropdown__list-item">
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Dashboard</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Account Settings</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Author Purchases</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Items Rating</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Add Credits</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Statements</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Invoice</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Upload Item</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link"> Edit Items</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Withdrawals</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Add Payment Method</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-dropdown-box">
+                        <div class="header-dropdown__title">
+                          <a class="header-dropdown__link header-dropdown__link--title" href="#">Others Pages</a>
+                        </div>
+                        <ul class="header-dropdown__list-item">
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Notifcations</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Message Inbox</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Message Compose</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Shopping Cart</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Checkout</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Login</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Register</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Recovery Password</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Support Forum</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Forum Details</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link"> How It Works</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-dropdown-box">
+                        <div class="header-dropdown__title dropdown-title">Others Pages</div>
+                        <ul class="header-dropdown__list-item">
+                          <li class="headeu-dropdow__list">
+                            <a href="#" class="header-dropdown__link">About Us</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Pricing Plan</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Testimonials</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">FAQs</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">FAQs Details</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Affiliates</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Terms & Conditions</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Blog V-1</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link"> Blog V-2</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Blog Details</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Contact Us</a>
+                          </li>
+                          <li class="header-dropdown__list">
+                            <a href="#" class="header-dropdown__link">Menu & Footer
+                              Variation</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="header__box">
+                <form action="" class="header__box-form">
+                  <input class="header__search" type="search" placeholder="Search product here...">
+                  <button class="header__submit icon-search header__icon-magnifier" type="submit">
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <section class="search-page">
+      <div class="container">
+      <div class="search-page__title"><span class ="search-page__count">4,572</span> wordpress themes, made with love</div>
+      <form class="search-page__form"action="get">
+        <input class="search-page__input "type="search" placeholder="Search your products">
+        <button class="search-page__btn">Search</button>
+      </form>
+    
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Category Page Grid</a></li>
+          <!-- <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">About Us</a></li>
+          <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Category Page Grid</a></li>
+          <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">About Us</a></li> -->
+        </ul>
+      </div>
+    </div>
+    </div>
+    </section>
+  
+
+ 
+
+    <!-- footer -->
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <div class=" footer__inner">
+          <div class="footer__item footer__item-contacts">
+            <a class="footer__logo-link" href="#">
+              <img class="footer__logo footer__title" src="images/footer/MartPlace.png" alt="footer-logo">
+            </a>
+            <div class="footer__text-contacts">Nunc placerat mi id nisi interdum they mollis.
+              Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+            </div>
+            <address class="phone">
+              <a class="footer__link footer__link-phone" href="tel:67898752235"> Phone: +6789-875-2235</a>
+            </address>
+            <address class="email">
+              <a class="footer__link footer__link-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+            </address>
+            <address class="footer__address">202 New Hampshire Avenue
+              Northwest #100, New York-2573
+            </address>
+          </div>
+          <div class="footer__item footer__item-menu">
+            <div class="footer__title">Our Company </div>
+            <ul class="footer__list">
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">About Us </a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">How It Work</a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link"> Affiliates</a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">Testimonials</a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">Copyright Notice</a>
+              </li>
+              <li class="footer__list-menu">
+                <a href="#" class="footer__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer__item-support">
+            <div class="footer__title">Help Support</div>
+            <ul class="footer__list">
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">Support Forum</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link"> Terms & Conditions</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">Support Policy</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">Refund Policy</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">Buyers Faq</a>
+              </li>
+              <li class="footer__list-support">
+                <a href="#" class="footer__link">Sellers Faq</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer__item-social">
+            <div class="footer__title">Newsletter</div>
+            <div class="footer__text footer__text-social">Subscribe to get the latest news, update and offer
+              information.
+              Don't worry, we won't send spam!
+            </div>
+            <form class="footer__form" action="post">
+              <input class="footer__input" type="email" placeholder="Enter email">
+              <button class="footer__btn" type="submit">Submit</button>
+            </form>
+            <ul class="footer-social footer-social__list">
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon facebook
+                    <span class="icon-facebook footer-icon footer-icon__facebook"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon twitter
+                    <span class="icon-twitter footer-icon footer-icon__twitter"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon google
+                    <span class="icon-google footer-icon footer-icon__google"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon pinterest
+                    <span class="icon-pinterest-p footer-icon footer-icon__pinterest"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon linkedin
+                    <span class="icon-linkedin1 footer-icon footer-icon__linkedin"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social__icon">
+                <a href="#" class="footer__link">
+                  <span class="invisible__text">
+                    icon dribbble
+                    <span class="icon-dribbble footer-icon footer-icon__dribbble"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__text-copy">©2017
+            <span class="footer__name-company">
+              <a class="footer__bottom-link" href="#">MartPlace.</a>
+            </span> All rights reserved.
+            Created by <a class="footer__bottom-link"> AazzTech</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
